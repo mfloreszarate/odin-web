@@ -1,0 +1,20 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eab33c;
+  /* border:1px solid red; */
+  /* box-sizing: border-box; */
+  width: 15%;
+  /* margin: 20px 0 20px 0; */
+
+}
+.item img{
+  width: 35%;
+
+}
+.item p {
+  padding: 0;
+  margin: 0;
+}

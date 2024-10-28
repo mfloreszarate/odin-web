@@ -1,0 +1,39 @@
+
+.odin-info {
+  background-color:black;
+  color:white;
+  padding:10px;
+  display: flex;
+}
+.odin-info .info-item {
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  color:white;
+}
+
+.navbar .logo {
+  width: 30%;
+  text-align: center;
+}
+.logo img {
+  padding-top: 10px;
+  width: 120px;
+  cursor: pointer;
+}
+.navbar .menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  width: 55%;
+}
+
+.navbar .menu .menu-item {
+  flex:1;
+  cursor: pointer;
+}

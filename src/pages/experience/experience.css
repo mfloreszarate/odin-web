@@ -1,0 +1,77 @@
+.color-yellow {
+  background-image: url('./../../assets/img/metalic.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta la imagen para que cubra todo el div */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  position: relative; /* Para que el contenido esté sobre la imagen */
+}
+
+.experience-content {
+  position: relative;
+  color: white; /* Color del texto sobre la imagen */
+  /* text-align: center; */
+  padding-top: 50px;
+  display: flex;
+  /* border:1px solid red; */
+  width: 80%;
+  margin: auto;
+}
+.experience-content .info {
+  width: 50%;
+/* padding-left:100px */
+}
+.experience-content .info-years {
+  width: 50%;
+  text-align: right;
+  font-weight: 700;
+  font-size: 90px;
+  text-shadow: 4px -2px 4px rgba(0,0,0,0.55);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+   justify-content: center; */
+}
+.info-years .number {
+  font-size: 2.5em;
+  line-height: 1;
+  align-items: center;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Color de fondo con opacidad */
+  /* z-index: 1; */
+}
+.overlay-detail{
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  /* border:1px solid yellow; */
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 35%;
+  position: absolute;
+  display: flex;
+  gap: 5rem;
+  /* justify-content: space-between; */
+  justify-content: center;
+
+}
+
+
+.text-shadow {
+  text-shadow: 4px -2px 4px rgba(0,0,0,0.55);
+}
+.spacing {
+  letter-spacing: 0.20em
+}
+.experience-description {
+  font-size: 3.5rem ;
+  font-weight: 700;
+}

@@ -1,0 +1,12 @@
+.floating-icon {
+  position: fixed;
+  bottom: 40px;  /* A 20px del borde inferior */
+  right: 40px;   /* A 20px del borde derecho */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.floating-icon img {
+  width: 50px;  /* Ajusta el tamaño del ícono según sea necesario */
+  height: 50px;
+  cursor: pointer; /* Añade cursor para indicar que es clicable */
+}
