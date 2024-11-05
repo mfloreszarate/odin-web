@@ -1,0 +1,26 @@
+.review {
+  /* margin-top: 4rem; */
+  width: 30%;
+}
+
+
+.review .client-img img {
+  text-align: center;
+  margin: auto;
+  padding-bottom:20px ;
+
+}
+
+.review .content {
+  background-color: #eab33c;
+  padding: 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  color:#ffff;
+}
+
+.review .client-name{
+  padding: 20px;
+  font-weight: 700;
+  color:#333333;
+}

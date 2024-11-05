@@ -1,3 +1,35 @@
 .clients-section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.w-100 {
+  width: 100%;
+}
 
+.clients-section .client-wrapper {
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  /* display: flex; */
+}
+.clients-section .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 15%;
+
+}
+.clients-section .reviews {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-section .brands-wrapper {
+  height: 25%;
+  padding-top: 3rem;
+  box-sizing: border-box;
 }
