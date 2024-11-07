@@ -6,7 +6,7 @@
 }
 
 .floating-icon img {
-  width: 50px;  /* Ajusta el tamaño del ícono según sea necesario */
-  height: 50px;
+  width: 4rem;  /* Ajusta el tamaño del ícono según sea necesario */
+  height: 4rem;
   cursor: pointer; /* Añade cursor para indicar que es clicable */
 }
