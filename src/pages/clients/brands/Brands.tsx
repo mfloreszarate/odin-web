@@ -7,6 +7,26 @@ import BbvaImg from './../../../assets/img/bbva.png'
 import FordImg from './../../../assets/img/ford.png'
 
 import './brands.css'
+function SamplePrevArrow({ onClick }: any) {
+  // const { className, style, onClick } = props;
+  return (
+    <div
+      className="custom-arrow next-arrow" onClick={onClick}
+    >
+      <NewtArrowIcon></NewtArrowIcon>
+    </div>
+
+  );
+}
+
+function SampleNextArrow({ onClick }: any) {
+  return (
+    <div className="custom-arrow prev-arrow" onClick={onClick}>
+      <BackArrowIcon></BackArrowIcon>
+    </div>
+  );
+}
+
 export const Brands = () => {
 
   const settings = {
@@ -18,16 +38,13 @@ export const Brands = () => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    nextArrow: <NewtArrowIcon />,
-    prevArrow: <BackArrowIcon />
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
   };
 
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {/* <div className="my-slider">
-          <img src={PepsiImg} alt="brand1" className="brand-img" />
-        </div> */}
         <div className="my-slider">
           <h3>
             <img src={CocaColaImg} alt="brand1" className="brand-img" />

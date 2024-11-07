@@ -3,3 +3,21 @@
   width: 40%;
   /* border: 1px solid orange; */
 }
+
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+  color: #000; /* Cambia el color del SVG */
+}
+
+.next-arrow {
+  right: -30px;
+}
+
+.prev-arrow {
+  left: -30px;
+}
