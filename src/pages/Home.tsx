@@ -5,6 +5,7 @@ import Navbar from "../components/layout/navbar/Navbar";
 import { Services } from "./services/Services";
 import { Projects } from "./projects/Projects";
 import { Clients } from "./clients/Clients";
+import { Footer } from "../components/layout/footer/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Services />
         <Projects />
         <Clients />
+        <Footer />
         <WhatsappIcon />
       </div>
     </>)

@@ -8,9 +8,23 @@
 .odin-info .info-item {
   display: flex;
   align-items: center;
-
+  width: 80%;
+  padding-left: 2rem;
 }
 
+.navbar-wrapper .social-links img{
+  width: 70%;
+  flex: 1;
+}
+.navbar-wrapper .social-links {
+  width: 20%;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: right;
+  cursor: pointer;
+  padding-right: 2rem;
+}
 .navbar {
   display: flex;
   align-items: center;
