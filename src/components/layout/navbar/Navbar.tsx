@@ -5,12 +5,12 @@ import InstagramIcon from './../../../assets/img/instagram.png'
 import TikTokIcon from './../../../assets/img/tik-tok.png'
 import FacebookIcon from './../../../assets/img/facebook.png'
 import { useEffect, useState } from 'react'
+import HamburgerMenu from './ResponsiveNavbar'
 
 
 export default function Navbar() {
   const [backgroundColor, setBackgroundColor] = useState<string>('transparent');
 
-  const [display, setDisplay] = useState<string>('block');
   // Manejar el evento scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +19,7 @@ export default function Navbar() {
         setBackgroundColor('#333')
         // setDisplay('none')
       } else {
-        setDisplay('block')
+        // setDisplay('block')
         setBackgroundColor('transparent');
       }
     }
@@ -32,7 +32,7 @@ export default function Navbar() {
   }, [])  // Se ejecuta solo una vez al montar el componente
 
   return <>
-    <div className='navbar-wrapper' style={{ position: 'fixed', width: '100%', zIndex: 1000, background: backgroundColor, display }}>
+    <div className='navbar-wrapper' style={{ position: 'fixed', width: '100%', zIndex: 1000, background: backgroundColor }}>
       <div className='odin-info'>
         <div className='info-item'>
           <LocationIcon />
@@ -59,5 +59,6 @@ export default function Navbar() {
         </ul>
       </div>
     </div>
+    <HamburgerMenu />
   </>
 }

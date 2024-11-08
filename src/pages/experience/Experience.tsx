@@ -16,13 +16,13 @@ export default function Experience() {
           <div className='text-shadow experience-description'>
             Volvemos tus ideas en realidad
           </div>
-          <div className='text-shadow'>
+          <div className='text-shadow experience-description-text'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut! Cum reiciendis veniam dicta tempora dolore accusantium veritatis, perspiciatis nostrum sapiente deleniti ipsum eligendi tempore blanditiis at nemo quis maxime!
           </div>
         </div>
         <div className="info-years">
           <span className='number'>4</span>
-          <div>años</div>
+          <div className='year-info'>años</div>
         </div>
 
       </div>

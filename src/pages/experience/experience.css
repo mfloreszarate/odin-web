@@ -75,3 +75,50 @@
   font-size: 3.5rem ;
   font-weight: 700;
 }
+
+
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .navbar-wrapper {
+    display: block;
+    font-size:16px;
+  }
+
+}
+
+/* Mostrar un componente solo en pantallas pequeñas (por ejemplo, móviles) */
+@media (max-width: 767px) {
+  .experience-content {
+    display:block;
+    width: 90%;
+
+  }
+    .experience-content .info {
+      width: 100%;
+    }
+  .experience-description-text {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+  .experience-content .info-years{
+    width: 100%;
+    text-align: center;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+    .info-years .number {
+      font-size: 4rem;
+    }
+    .info-years .year-info {
+      font-size: 4rem;
+    }
+        .overlay-detail {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0;
+        }
+}

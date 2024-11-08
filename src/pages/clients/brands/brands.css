@@ -11,7 +11,7 @@
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 2;
-  color: #000; /* Cambia el color del SVG */
+  /* color: #000; Cambia el color del SVG */
 }
 
 .next-arrow {

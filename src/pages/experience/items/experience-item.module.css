@@ -4,17 +4,32 @@
   justify-content: center;
   align-items: center;
   color: #eab33c;
-  /* border:1px solid red; */
-  /* box-sizing: border-box; */
   width: 15%;
-  /* margin: 20px 0 20px 0; */
-
 }
+
+.spanNumber {
+  font-size: 4.5em;
+  font-weight: 900;
+}
+
 .item img{
   width: 35%;
-
 }
 .item p {
   padding: 0;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .item {
+    width:40%
+  }
+
+    .spanNumber {
+      font-size: 2.5em;
+      font-weight: 900;
+    }
+  /* .item .span-number {
+    font-size: 3em;
+    font-weight: 900;
+  } */
 }

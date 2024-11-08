@@ -10,7 +10,7 @@ export const ExperienceItem = ({ icon, primaryDescription, secondaryDescription 
   return (
     <div className={style.item}>
       <img src={icon} alt="icon" />
-      <span style={{ fontSize: '4.5em', fontWeight: 900 }}>{primaryDescription}</span>
+      <span className={style.spanNumber}>{primaryDescription}</span>
       <span>{secondaryDescription}</span>
     </div>
   )
