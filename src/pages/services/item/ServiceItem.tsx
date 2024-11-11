@@ -12,6 +12,7 @@ export const ServiceItem = ({ title, description, icon }: Props) => {
     <div className={styles.item}>
       <img src={icon} alt="iconsrc" />
       <div className={styles.title}>
+        <span><img className={styles.inlineImg} alt="img" src={icon} /></span>
         {title}
       </div>
       <div className={styles.description}>

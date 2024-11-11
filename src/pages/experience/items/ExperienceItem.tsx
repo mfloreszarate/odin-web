@@ -11,7 +11,7 @@ export const ExperienceItem = ({ icon, primaryDescription, secondaryDescription 
     <div className={style.item}>
       <img src={icon} alt="icon" />
       <span className={style.spanNumber}>{primaryDescription}</span>
-      <span>{secondaryDescription}</span>
+      <span className={style.secondaryDescription}>{secondaryDescription}</span>
     </div>
   )
 }

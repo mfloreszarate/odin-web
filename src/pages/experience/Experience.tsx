@@ -14,10 +14,12 @@ export default function Experience() {
             NOSOTROS
           </div>
           <div className='text-shadow experience-description'>
-            Volvemos tus ideas en realidad
+            Hacemos realidad tus ideas
           </div>
           <div className='text-shadow experience-description-text'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut! Cum reiciendis veniam dicta tempora dolore accusantium veritatis, perspiciatis nostrum sapiente deleniti ipsum eligendi tempore blanditiis at nemo quis maxime!
+            Somos una empresa formada por un grupo de colaboradores que entendemos como lema, que el profesionalismo no está en nuestros títulos sino en el amor y dedicación que le ponemos a cada proyecto.
+            Nos dedicamos a exponenciar las ideas de nuestros clientes para llevarlas al máximo nivel de su imaginación y los acompañamos desde el inicio del proyecto y hasta en cualquier etapa de la construcción. Contamos con nuestro propio departamento de arquitectura quienes desarrollan nuevos proyectos como las Granny House o Casas financiadas, como también realizamos proyectos a medida cumpliendo con todos los parámetros del cliente. Nosotros somos un reflejo de los deseos del cliente.
+
           </div>
         </div>
         <div className="info-years">

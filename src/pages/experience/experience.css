@@ -9,16 +9,13 @@
 .experience-content {
   position: relative;
   color: white; /* Color del texto sobre la imagen */
-  /* text-align: center; */
-  padding-top: 50px;
+  padding-top: 2rem;
   display: flex;
-  /* border:1px solid red; */
   width: 80%;
   margin: auto;
 }
 .experience-content .info {
-  width: 50%;
-/* padding-left:100px */
+  flex:3;
 }
 .experience-content .info-years {
   width: 50%;
@@ -26,10 +23,8 @@
   font-weight: 700;
   font-size: 90px;
   text-shadow: 4px -2px 4px rgba(0,0,0,0.55);
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-   justify-content: center; */
+  flex: 1;
+
 }
 .info-years .number {
   font-size: 2.5em;
@@ -55,7 +50,7 @@
   /* border:1px solid yellow; */
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.4);
-  height: 35%;
+  height: 30%;
   position: absolute;
   display: flex;
   gap: 5rem;
@@ -75,21 +70,13 @@
   font-size: 3.5rem ;
   font-weight: 700;
 }
-
-
-@media (min-width: 768px) {
-  .hamburger-menu {
-    display: none;
-  }
-  .navbar-wrapper {
-    display: block;
-    font-size:16px;
-  }
-
-}
+ .experience-description-text {
+   font-size: 1rem;
+   padding-top: 1rem;
+ }
 
 /* Mostrar un componente solo en pantallas pequeñas (por ejemplo, móviles) */
-@media (max-width: 767px) {
+/* @media (max-width: 1023px) {
   .experience-content {
     display:block;
     width: 90%;
@@ -105,7 +92,6 @@
   .experience-content .info-years{
     width: 100%;
     text-align: center;
-    /* display: flex; */
     display: none;
     align-items: center;
     justify-content: center;
@@ -121,4 +107,75 @@
           flex-wrap: wrap;
           gap: 0;
         }
+} */
+/* Intervalo para teléfonos pequeños (320px a 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Estilos para teléfonos pequeños */
+  .experience-content {
+    width: 95%;
+  }
+  .experience-description {
+    font-size: 2.3rem;
+  }
+  .experience-content .info {
+      width: 100%;
+  }
+  .experience-content .info-years {
+    display: none;
+  }
+  .overlay-detail {
+    gap:0.5rem;
+  }
+  .overlay-detail {
+    height: 25%;
+  }
+  .experience-description-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Intervalo para teléfonos grandes (481px a 767px) */
+@media (min-width: 481px) and (max-width: 1023px) {
+  .experience-content {
+      width: 80%;
+    }
+
+    .experience-description {
+      font-size: 2.4rem;
+    }
+
+    .experience-content .info {
+      width: 90%;
+    }
+
+    .experience-content .info-years {
+        display: none;
+    }
+
+    .overlay-detail {
+      gap: 3.5rem;
+    }
+
+    .overlay-detail {
+      height: 30%;
+    }
+
+    .experience-description-text {
+      font-size: 1rem;
+    }
+}
+
+/* Intervalo para tablets (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets */
+}
+
+/* Intervalo para laptops y pantallas de escritorio pequeñas (1024px a 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  /* Estilos para laptops y pantallas de escritorio pequeñas */
+}
+
+/* Intervalo para pantallas de escritorio grandes (1200px y más) */
+@media (min-width: 1200px) {
+  /* Estilos para pantallas de escritorio grandes */
 }

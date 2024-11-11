@@ -14,3 +14,10 @@
   height: 100%;
   align-items: center;
 }
+
+@media (max-width: 767px) {
+  .services-section .content {
+    gap:0;
+  }
+
+}
