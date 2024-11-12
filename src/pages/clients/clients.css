@@ -2,34 +2,84 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-.w-100 {
-  width: 100%;
+  height: 100vh;
+  padding-top: 3rem;
 }
 
+
 .clients-section .client-wrapper {
-  height: 60%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  /* display: flex; */
+  padding-top: 2rem;
+}
+.separator {
+  width: 8%;
+  border: 2px solid #eab33c;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
 }
 .clients-section .title {
   font-size: 2.5rem;
   font-weight: 700;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  /* display: flex; */
   width: 100%;
-  height: 15%;
-
+  padding-bottom: 1rem;
 }
 .clients-section .reviews {
   display: flex;
   justify-content: space-between;
 }
 .clients-section .brands-wrapper {
-  height: 25%;
   padding-top: 3rem;
   box-sizing: border-box;
+  width: 80%;
+  margin: auto;
 }
+
+/* Intervalo para teléfonos pequeños (320px a 480px) */
+@media (min-width: 320px) and (max-width: 766px) {
+  /* Estilos para teléfonos pequeños */
+  .clients-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .clients-section .reviews {
+    display: block;
+  }
+  .separator {
+    width: 20%;
+  }
+}
+/* Intervalo para tablets (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .clients-section {
+      width: 100%;
+      height: auto;
+  }
+  .clients-section .reviews {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    /* Intervalo para pantallas de escritorio grandes (1200px y más) */
+  }
+  @media (min-width: 1200px) {
+    /* Estilos para pantallas de escritorio grandes */
+
+    .clients-section .client-wrapper {
+      height: 60%;
+    }
+
+    /* .clients-section {
+      padding-top: 0;
+    }
+    .clients-section .client-wrapper {
+      padding-top: 0;
+    } */
+  }

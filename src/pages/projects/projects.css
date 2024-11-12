@@ -1,4 +1,39 @@
 .project-section {
   display:flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  height: 100vh !important;
+
+}
+
+/* Intervalo para teléfonos pequeños (320px a 480px) */
+@media (min-width: 320px) and (max-width: 1200px) {
+  /* Estilos para teléfonos pequeños */
+  .project-section {
+    height: auto !important;
+  }
+}
+
+/* Intervalo para teléfonos grandes (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Estilos para teléfonos grandes */
+}
+
+/* Intervalo para tablets (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets */
+}
+
+/* Intervalo para laptops y pantallas de escritorio pequeñas (1024px a 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  /* Estilos para laptops y pantallas de escritorio pequeñas */
+}
+
+/* Intervalo para pantallas de escritorio grandes (1200px y más) */
+@media (min-width: 1200px) {
+
+  /* Estilos para pantallas de escritorio grandes */
+  /* .project-section {
+      height: auto 100vh;
+    } */
 }

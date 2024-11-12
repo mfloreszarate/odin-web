@@ -7,7 +7,7 @@ import AdvanceImg4 from './../../assets/img/avance-4.webp'
 export const Projects = () => {
 
   return (
-    <div className="full-height project-section" >
+    <div className="project-section">
       <ProjectItem backgroundImage={AdvanceImg1} name="Proyecto 01" />
       <ProjectItem backgroundImage={AdvanceImg2} name="Proyecto 02" />
       <ProjectItem backgroundImage={AdvanceImg3} name="Proyecto 03" />

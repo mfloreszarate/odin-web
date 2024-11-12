@@ -10,16 +10,16 @@ import HamburgerMenu from './ResponsiveNavbar'
 
 export default function Navbar() {
   const [backgroundColor, setBackgroundColor] = useState<string>('transparent');
-
+  const [display, setDisplay] = useState<string>('block');
   // Manejar el evento scroll
   useEffect(() => {
     const handleScroll = () => {
       // Si el scroll es mayor a 100vh, cambia el color de fondo
       if (window.scrollY > window.innerHeight) {
         setBackgroundColor('#333')
-        // setDisplay('none')
+        setDisplay('none')
       } else {
-        // setDisplay('block')
+        setDisplay('block')
         setBackgroundColor('transparent');
       }
     }
@@ -44,7 +44,7 @@ export default function Navbar() {
           <span><img src={TikTokIcon} alt="TikTokIcon" /></span>
         </div>
       </div>
-      <div className="navbar">
+      <div className="navbar" style={{ display }}>
         <div className="logo">
           <img src={logo} alt="odin-logo" />
         </div>

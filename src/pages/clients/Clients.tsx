@@ -6,10 +6,10 @@ import { Brands } from './brands/Brands'
 export const Clients = () => {
 
   return (
-    <section className="full-height clients-section">
+    <section className="clients-section">
       <div className="title">
-        <div className="separator"></div>
         Clientes
+        <div className="separator"></div>
       </div>
       <div className='client-wrapper'>
         <div className="reviews">

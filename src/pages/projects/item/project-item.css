@@ -1,15 +1,13 @@
 .project-item {
-  /* border:1px solid black; */
   width: 25%;
   position: relative;
-  height: 50%;
   perspective: 1000px;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  box-sizing: border-box !important;
 }
+
 .project-item:hover {
   cursor: pointer;
 }
@@ -43,3 +41,52 @@
   width: 100%;
   font-weight: 1rem;
 } */
+/* Intervalo para teléfonos pequeños (320px a 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Estilos para teléfonos pequeños */
+  .project-item {
+    width: 100%;
+    height: 17rem !important;
+  }
+
+}
+
+/* Intervalo para teléfonos grandes (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Estilos para teléfonos grandes */
+   .project-item {
+    width: 50%;
+    height: 17rem !important;
+  }
+
+}
+
+/* Intervalo para tablets (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets */
+   .project-item {
+    width: 33.33%;
+    height: 17rem !important;
+  }
+}
+
+/* Intervalo para laptops y pantallas de escritorio pequeñas (1024px a 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  /* Estilos para laptops y pantallas de escritorio pequeñas */
+  .project-detail {
+    font-size: 1.8rem;
+  }
+  .project-item {
+    width: 25%;
+    height: 17rem !important;
+  }
+}
+
+/* Intervalo para pantallas de escritorio grandes (1200px y más) */
+@media (min-width: 1200px) {
+  /* Estilos para pantallas de escritorio grandes */
+  .project-item {
+    width: 25%;
+    height: 50% !important;
+  }
+}

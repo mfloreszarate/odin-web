@@ -1,6 +1,7 @@
 .review {
   /* margin-top: 4rem; */
   width: 30%;
+  /* border:1px solid black; */
 }
 
 
@@ -23,4 +24,33 @@
   padding: 20px;
   font-weight: 700;
   color:#333333;
+}
+
+/* Intervalo para teléfonos pequeños (320px a 480px) */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* Estilos para teléfonos pequeños */
+  .review {
+   width: 90%;
+   margin:auto;
+  }
+}
+
+
+/* Intervalo para tablets (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets */
+  .review {
+   width: 45%;
+   margin:auto;
+  }
+}
+
+/* Intervalo para laptops y pantallas de escritorio pequeñas (1024px a 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  /* Estilos para laptops y pantallas de escritorio pequeñas */
+}
+
+/* Intervalo para pantallas de escritorio grandes (1200px y más) */
+@media (min-width: 1200px) {
+  /* Estilos para pantallas de escritorio grandes */
 }

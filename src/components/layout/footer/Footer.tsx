@@ -28,7 +28,7 @@ export const Footer = () => {
           <img src={TikTokIcon} alt="src" />
         </div>
       </div>
-      <div className="grid-item">
+      <div className="grid-item newsletter">
         <div>
           Suscríbete a nuestro newsletter y sé la primera persona en conocer nuestros últimos proyectos, ofertas,
         </div>
