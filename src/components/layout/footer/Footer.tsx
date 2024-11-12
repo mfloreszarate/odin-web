@@ -14,7 +14,7 @@ export const Footer = () => {
   }
 
   return (
-    <footer className='footer'>
+    <footer className='footer' id='contact'>
       <div className="grid-item contact">
         <div className='title'>Contacto</div>
         <div>Avenida Entre Ríos 1297 </div>

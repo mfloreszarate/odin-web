@@ -6,7 +6,7 @@ import { Brands } from './brands/Brands'
 export const Clients = () => {
 
   return (
-    <section className="clients-section">
+    <section className="clients-section" id='clients'>
       <div className="title">
         Clientes
         <div className="separator"></div>

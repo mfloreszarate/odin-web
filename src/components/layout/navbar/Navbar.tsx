@@ -4,36 +4,46 @@ import LocationIcon from './../../../assets/icons/location.svg'
 import InstagramIcon from './../../../assets/img/instagram.png'
 import TikTokIcon from './../../../assets/img/tik-tok.png'
 import FacebookIcon from './../../../assets/img/facebook.png'
+// import OdinSmallIcon from './../../../assets/img/odin-small.webp'
 import { useEffect, useState } from 'react'
 import HamburgerMenu from './ResponsiveNavbar'
+import { menuConfig } from '../../../utils/menu.config'
 
 
 export default function Navbar() {
   const [backgroundColor, setBackgroundColor] = useState<string>('transparent');
-  const [display, setDisplay] = useState<string>('block');
+  const [display, setDisplay] = useState<string>('flex');
   // Manejar el evento scroll
   useEffect(() => {
     const handleScroll = () => {
       // Si el scroll es mayor a 100vh, cambia el color de fondo
-      if (window.scrollY > window.innerHeight) {
+      if (window.scrollY >= window.innerHeight) {
         setBackgroundColor('#333')
         setDisplay('none')
       } else {
-        setDisplay('block')
+        setDisplay('flex')
         setBackgroundColor('transparent');
       }
     }
-    // Añadir el listener del scroll
+
     window.addEventListener('scroll', handleScroll);
-    // Limpiar el listener al desmontar el componente
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [])  // Se ejecuta solo una vez al montar el componente
+  }, [])
 
+  const handleClick = (link: string) => {
+    const element = document.getElementById(link)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   return <>
     <div className='navbar-wrapper' style={{ position: 'fixed', width: '100%', zIndex: 1000, background: backgroundColor }}>
       <div className='odin-info'>
+        {/* <span>
+          <img src={OdinSmallIcon} alt="icon" style={{ width: '10%' }} />
+        </span> */}
         <div className='info-item'>
           <LocationIcon />
           <span>  Avenida Entre Ríos 1297, Salta, Argentina</span>
@@ -49,13 +59,7 @@ export default function Navbar() {
           <img src={logo} alt="odin-logo" />
         </div>
         <ul className="menu">
-          <li className='menu-item'>INICIO</li>
-          <li className='menu-item'>NOSOTROS</li>
-          <li className='menu-item'>SERVICIOS</li>
-          <li className='menu-item'>PROYECTOS</li>
-          {/* <li className='menu-item'>NOVEDADES</li> */}
-          <li className='menu-item'>CLIENTES</li>
-          <li className='menu-item'>CONTACTO</li>
+          {menuConfig.map(el => <li key={el.item} className='menu-item' onClick={() => { handleClick(el.link) }}>{el.item}</li>)}
         </ul>
       </div>
     </div>

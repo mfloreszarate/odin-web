@@ -5,7 +5,7 @@ import ServiceIcon from './../../assets/img/service-icon.png'
 export const Services = () => {
 
   return (
-    <section className="services-section">
+    <section className="services-section" id='services'>
       <div className="content">
         < ServiceItem
           icon={ServiceIcon}
