@@ -148,12 +148,23 @@
 
 /* Mostrar un componente solo en pantallas pequeñas (por ejemplo, móviles) */
 @media (max-width: 767px) {
+
   .hamburger-menu {
     display: block;
   }
   .navbar-wrapper {
     display: none;
     font-size: 14px;
+  }
+  .hamburger-menu-wrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 0.5rem;
+  }
+
+  .responsive-logo {
+    width: 100px;
+    margin: auto;
   }
 
 }

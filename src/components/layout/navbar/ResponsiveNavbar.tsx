@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import './navbar.css';
 import { menuConfig } from '../../../utils/menu.config';
+import logo from './../../../assets/img/logo.png'
 
-// interface Props {
-//   display: string
-// }
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,14 +19,14 @@ const HamburgerMenu = () => {
   }
   return (
     <div className="hamburger-menu">
-      {/* Botón de menú hamburguesa */}
-      <button className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <span className="line"></span>
-        <span className="line"></span>
-        <span className="line"></span>
-      </button>
-
-      {/* Menú desplegable a pantalla completa */}
+      <div className='hamburger-menu-wrapper'>
+        <button className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          <span className="line"></span>
+          <span className="line"></span>
+          <span className="line"></span>
+        </button>
+        <img src={logo} alt="odin-logo" className='responsive-logo' />
+      </div>
       <nav className={`hamburger-menu-item ${isOpen ? 'show' : ''}`}>
         {/* Botón de cerrar */}
         <button className="close-button" onClick={toggleMenu}>X</button>
@@ -36,7 +34,7 @@ const HamburgerMenu = () => {
           {menuConfig.map(el => <li key={el.item} className='menu-item' onClick={() => { handleClick(el.link) }}>{el.item}</li>)}
         </ul>
       </nav>
-    </div>
+    </div >
   );
 };
 
