@@ -6,7 +6,7 @@ import { ExperienceItem } from './items/ExperienceItem'
 
 export default function Experience() {
   return (
-    <section className='full-height color-yellow' id='experience'>
+    <section className='experience' id='experience'>
       <div className="overlay"></div>
       <div className="experience-content">
         <div className="info">

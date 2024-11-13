@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './navbar.css';
+import { menuConfig } from '../../../utils/menu.config';
 
 // interface Props {
 //   display: string
@@ -7,11 +8,17 @@ import './navbar.css';
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Maneja el estado de apertura y cierre del menú
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
+  const handleClick = (link: string) => {
+    const element = document.getElementById(link)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false)
+    }
+  }
   return (
     <div className="hamburger-menu">
       {/* Botón de menú hamburguesa */}
@@ -26,12 +33,7 @@ const HamburgerMenu = () => {
         {/* Botón de cerrar */}
         <button className="close-button" onClick={toggleMenu}>X</button>
         <ul>
-          <li >INICIO</li>
-          <li >NOSOTROS</li>
-          <li >SERVICIOS</li>
-          <li >PROYECTOS</li>
-          <li >CLIENTES</li>
-          <li >CONTACTO</li>
+          {menuConfig.map(el => <li key={el.item} className='menu-item' onClick={() => { handleClick(el.link) }}>{el.item}</li>)}
         </ul>
       </nav>
     </div>

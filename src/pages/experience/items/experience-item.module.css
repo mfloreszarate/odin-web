@@ -5,6 +5,8 @@
   align-items: center;
   color: #eab33c;
   width: 15%;
+  padding-top:1rem;
+  padding-bottom:1rem;
 }
 .secondaryDescription {
   font-size:0.8rem;
@@ -36,9 +38,29 @@
   .item {
       flex: 1;
     }
-
     .spanNumber {
       font-size: 3.5em;
       font-weight: 900;
     }
+  .secondaryDescription {
+    font-size:1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .item {
+      flex: 1;
+    }
+    .spanNumber {
+      font-size: 3.5em;
+      font-weight: 900;
+    }
+  .secondaryDescription {
+    font-size:1rem;
+  }
+}
+@media (min-width: 1024px) {
+   .secondaryDescription {
+    font-size:1.1rem;
+  }
 }

@@ -21,7 +21,6 @@ export const Footer = () => {
         <div>Salta, Argentina</div>
         <div>+54-3874 67-9723</div>
         <div>odinconstruccionessrl@gmail.com</div>
-        <div>Nuestra oficina esta en remodelación contáctanos vía Telefónica de 9:00h a 18:00hs. ¡GRACIAS!</div>
         <div className='social-icons'>
           <img src={InstagramIcon} alt="src" />
           <img src={FacebookIcon} alt="src" />
@@ -35,7 +34,7 @@ export const Footer = () => {
         <div className="row" style={{ paddingTop: '1.5rem' }}>
           <input type="text" placeholder='E-mail' value={email} onChange={onChangeEmail} />
         </div>
-        <div className="row" style={{ paddingTop: '1.5rem' }}>
+        <div className="row" style={{ paddingTop: '1.5rem', justifyContent: 'center' }}>
           <button type='button' className='subscribe-button c-pointer'>
             Suscríbete
           </button>
