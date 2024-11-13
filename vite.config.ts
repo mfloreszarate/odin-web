@@ -9,7 +9,6 @@ export default defineConfig({
     include: "**/*.svg",
   }),
   ],
-  base: '/odin-web/',
   server: {
     port: 5000,
   }
