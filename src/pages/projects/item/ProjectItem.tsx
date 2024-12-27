@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ImageGalleryModal from '../../../components/common/modal/ModalGallery'
 import './project-item.css'
 interface ProjectProps {
@@ -12,7 +12,6 @@ export const ProjectItem = ({ name, backgroundImage, images }: ProjectProps) => 
   const [isOpen, setIsOpen] = useState(false)
 
   const handleClose = (event: any) => {
-    console.log('event', event)
     setIsOpen(false)
   }
 

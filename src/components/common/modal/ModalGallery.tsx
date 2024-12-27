@@ -20,7 +20,7 @@ const ImageGalleryModal: React.FC<ImageGalleryModalProps> = ({ images, title, is
 
   return (
     <div>
-      <span > {isOpen.toString()}</span>
+      <span > {title}</span>
 
       <Modal
         isOpen={isOpen}

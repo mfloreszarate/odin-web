@@ -11,7 +11,7 @@ import { menuConfig } from '../../../utils/menu.config'
 
 export default function Navbar() {
   const [backgroundColor, setBackgroundColor] = useState<string>('transparent');
-  const [display, setDisplay] = useState<string>('flex');
+  // const [display, setDisplay] = useState<string>('flex');
   // Manejar el evento scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -65,7 +65,7 @@ export default function Navbar() {
           </span>
         </div>
       </div>
-      <div className="navbar" style={{ display }}>
+      <div className="navbar" style={{ display: 'flex' }}>
         <div className="logo">
           <img src={Logo} alt="odin-logo" />
         </div>
