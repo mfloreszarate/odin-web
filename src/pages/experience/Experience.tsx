@@ -17,8 +17,9 @@ export default function Experience() {
             Hacemos realidad tus ideas
           </div>
           <div className='text-shadow experience-description-text'>
-            Somos una empresa formada por un grupo de colaboradores que entendemos como lema, que el profesionalismo no está en nuestros títulos sino en el amor y dedicación que le ponemos a cada proyecto.
-            Nos dedicamos a exponenciar las ideas de nuestros clientes para llevarlas al máximo nivel de su imaginación y los acompañamos desde el inicio del proyecto y hasta en cualquier etapa de la construcción. Contamos con nuestro propio departamento de arquitectura quienes desarrollan nuevos proyectos como las Granny House o Casas financiadas, como también realizamos proyectos a medida cumpliendo con todos los parámetros del cliente. Nosotros somos un reflejo de los deseos del cliente.
+            En nuestra empresa, transformamos ideas en realidades extraordinarias. Con un equipo apasionado y comprometido, vivimos bajo el lema: “El resultado de nuestro trabajo refleja la dedicación y el empeño que ponemos en cada proyecto”.
+            Nos especializamos en llevar tus ideas a otro nivel, superando expectativas y acompañándote en cada paso del camino.
+            Contamos con un equipo propio de arquitectos y diseñadores que crean proyectos innovadores, como nuestras exclusivas Granni House y Casas Financiadas. Además, desarrollamos proyectos a medida, dando vida a la visión única de cada cliente.
 
           </div>
         </div>
@@ -31,7 +32,7 @@ export default function Experience() {
       <div className="overlay-detail">
         <ExperienceItem
           icon={CraneIcon}
-          primaryDescription='490'
+          primaryDescription='5'
           secondaryDescription='Proyectos en curso'
         />
         <ExperienceItem

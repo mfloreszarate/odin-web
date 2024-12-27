@@ -12,9 +12,13 @@ html {
   left: 0;
   top: 0;
   font-size: 100%;
-  font-family: "Assistant", sans-serif;
+  font-family: "Montserrat", sans-serif;
+
   font-optical-sizing: auto;
   font-style: normal;
+}
+.text-title {
+  font-family: "League Spartan", sans-serif !important;
 }
 
 .center,

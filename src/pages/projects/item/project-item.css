@@ -1,5 +1,5 @@
 .project-item {
-  width: 25%;
+  width: 33%;
   position: relative;
   perspective: 1000px;
   background-size: cover;
@@ -33,7 +33,13 @@
   color: #ffff;
   font-weight: 600;
   font-size: 2rem;
-
+  text-align:center;
+  /* padding-left:1rem;
+  padding-right: 1rem; */
+}
+.project-detail span {
+  margin-left:1rem;
+  margin-right: 1rem;
 }
 /*
 .project-detail .description {
@@ -77,7 +83,7 @@
     font-size: 1.8rem;
   }
   .project-item {
-    width: 25%;
+    width: 33%;
     height: 17rem !important;
   }
 }
@@ -86,7 +92,7 @@
 @media (min-width: 1200px) {
   /* Estilos para pantallas de escritorio grandes */
   .project-item {
-    width: 25%;
+    width: 33%;
     height: 50% !important;
   }
 }

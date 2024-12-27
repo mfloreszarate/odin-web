@@ -18,7 +18,7 @@
   flex: 1;
 }
 .navbar-wrapper .social-links {
-  width: 20%;
+  width: 100%;
   display: flex;
   gap: 3rem;
   align-items: center;
@@ -57,7 +57,7 @@
 /* Estilos básicos */
 .hamburger-menu {
   position: relative;
-  z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+  z-index: 2900; /* Asegúrate de que el menú esté por encima de otros elementos */
   background:black;
 }
 
@@ -69,7 +69,7 @@
   flex-direction: column;
   gap: 5px;
   padding: 10px;
-  z-index: 1100; /* Coloca el botón por encima del menú */
+  z-index: 3000; /* Coloca el botón por encima del menú */
 }
 
 .hamburger .line {
@@ -100,7 +100,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.95); /* Fondo con ligera transparencia */
-  z-index: 1900; /* Coloca el menú por encima de otros elementos */
+  z-index: 3900; /* Coloca el menú por encima de otros elementos */
   padding-top: 60px; /* Espacio superior para el contenido */
   text-align: center;
   transition: opacity 0.3s;

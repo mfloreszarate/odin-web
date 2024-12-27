@@ -1,18 +1,20 @@
 
 import styles from './service-item.module.css';
+import ServiceIcon from './../../../assets/icons/service-icon-2.svg'
 
 interface Props {
-  icon: any
   title: string,
   description: string
 }
-export const ServiceItem = ({ title, description, icon }: Props) => {
+export const ServiceItem = ({ title, description }: Props) => {
 
   return (
     <div className={styles.item}>
-      <img src={icon} alt="iconsrc" />
       <div className={styles.title}>
-        <span><img className={styles.inlineImg} alt="img" src={icon} /></span>
+        <ServiceIcon></ServiceIcon>
+        <span className={styles.inlineImg}>
+          <ServiceIcon></ServiceIcon>
+        </span>
         {title}
       </div>
       <div className={styles.description}>

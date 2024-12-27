@@ -25,7 +25,7 @@ const HamburgerMenu = () => {
           <span className="line"></span>
           <span className="line"></span>
         </button>
-        <img src={logo} alt="odin-logo" className='responsive-logo' />
+        {/* <img src={logo} alt="odin-logo" className='responsive-logo' /> */}
       </div>
       <nav className={`hamburger-menu-item ${isOpen ? 'show' : ''}`}>
         {/* Botón de cerrar */}
