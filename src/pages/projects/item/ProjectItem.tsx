@@ -11,7 +11,7 @@ export const ProjectItem = ({ name, backgroundImage, images }: ProjectProps) => 
 
   const [isOpen, setIsOpen] = useState(false)
 
-  const handleClose = (event: any) => {
+  const handleClose = () => {
     setIsOpen(false)
   }
 
