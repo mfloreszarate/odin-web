@@ -1,5 +1,5 @@
 import './introduction.css'
-import video from './../../assets/videos/video.mp4'
+import video from './../../assets/videos/01.mp4'
 
 export default function Introduction() {
   return (

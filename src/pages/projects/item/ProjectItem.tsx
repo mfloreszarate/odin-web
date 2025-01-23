@@ -1,34 +1,33 @@
-import { useState } from 'react';
-import ImageGalleryModal from '../../../components/common/modal/ModalGallery'
+
 import './project-item.css'
+import { useNavigate } from 'react-router-dom';
 interface ProjectProps {
   name: string,
   backgroundImage: any,
-  description?: string,
-  images: { original: string; thumbnail: string }[];
+  id: number
 }
-export const ProjectItem = ({ name, backgroundImage, images }: ProjectProps) => {
+export const ProjectItem = ({ name, backgroundImage, id }: ProjectProps) => {
 
-  const [isOpen, setIsOpen] = useState(false)
+  const navigate = useNavigate()
 
-  const handleClose = () => {
-    setIsOpen(false)
+  const onNavigate = (id: number) => {
+    navigate(`/proyecto/${id}`)
   }
 
   return (
     <div className='project-item'
       style={{ backgroundImage: `url(${backgroundImage})` }}
-      onClick={() => { setIsOpen(true) }}
+      onClick={() => { onNavigate(id) }}
     >
       <div className="project-item-overlay"></div>
       <div className="project-detail">
-        <ImageGalleryModal
+        <span>{name}</span>
+        {/* <ImageGalleryModal
           isOpen={isOpen}
-          isClose={handleClose}
+          setIsOpen={setIsOpen}
           title={name}
           images={images}
-        />
-
+        /> */}
       </div>
     </div>
 

@@ -1,5 +1,4 @@
 import './navbar.css'
-// import logo from './../../../assets/img/logo.png'
 import Logo from './../../../assets/img/logo-ultimo.png'
 import InstagramIcon from './../../../assets/img/instagram.png'
 import TikTokIcon from './../../../assets/img/tik-tok.png'
@@ -7,46 +6,44 @@ import FacebookIcon from './../../../assets/img/facebook.png'
 import { useEffect, useState } from 'react'
 import HamburgerMenu from './ResponsiveNavbar'
 import { menuConfig } from '../../../utils/menu.config'
+import { useNavigate } from 'react-router-dom'
 
 
-export default function Navbar() {
+interface Props {
+  mainPage: boolean
+}
+export default function Navbar({ mainPage }: Props) {
+
   const [backgroundColor, setBackgroundColor] = useState<string>('transparent');
-  // const [display, setDisplay] = useState<string>('flex');
-  // Manejar el evento scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      // Si el scroll es mayor a 100vh, cambia el color de fondo
-      if (window.scrollY >= window.innerHeight) {
-        setBackgroundColor('#333')
-        // setDisplay('none')
-      } else {
-        // setDisplay('flex')
-        setBackgroundColor('transparent');
-      }
-    }
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (mainPage) {
+
+      const handleScroll = () => {
+        if (window.scrollY >= window.innerHeight) {
+          setBackgroundColor('#333')
+        } else {
+          setBackgroundColor('transparent');
+        }
+      }
+
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    } else {
+      setBackgroundColor('#333')
+    }
   }, [])
 
   const handleClick = (link: string) => {
-    const element = document.getElementById(link)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    navigate(`/#${link}`)
   }
   return <>
-    <div className='navbar-wrapper' style={{ position: 'fixed', width: '100%', zIndex: 1000, background: backgroundColor }}>
+    <div className='navbar-wrapper' style={{ position: mainPage ? 'fixed' : 'relative', width: '100%', zIndex: 1000, background: backgroundColor }}>
       <div className='odin-info'>
-        {/* <span>
-          <img src={OdinSmallIcon} alt="icon" style={{ width: '10%' }} />
-        </span> */}
-        {/* <div className='info-item'>
-          <LocationIcon />
-          <span>  Avenida Entre Ríos 1297, Salta, Argentina</span>
-        </div> */}
         <div className="social-links">
           <span>
             <a href="https://www.instagram.com/odin.construcciones/profilecard/?igsh=Y2cwM3k5dHMxNTBl">

@@ -1,24 +1,30 @@
-import { WhatsappIcon } from "../components/common/whatsapp/Whatsapp";
 import Experience from "./experience/Experience";
 import Introduction from "./introduction/Introduction";
-import Navbar from "../components/layout/navbar/Navbar";
 import { Services } from "./services/Services";
 import { Projects } from "./projects/Projects";
 import { Clients } from "./clients/Clients";
-import { Footer } from "../components/layout/footer/Footer";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Home() {
+
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash)
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
+    }
+  }, [location]);
+
   return (
     <>
-      <div className="page-container" style={{ display: 'relative' }}>
-        <Navbar />
-        <Introduction />
-        <Experience />
-        <Services />
-        <Projects />
-        <Clients />
-        <Footer />
-        <WhatsappIcon />
-      </div>
+      <Introduction />
+      <Experience />
+      <Services />
+      <Projects />
+      <Clients />
     </>)
 }

@@ -235,6 +235,11 @@ p {
   }
 }
 
+
+.image-gallery-svg {
+  height:5rem !important;
+}
+
 /* @media only screen and (min-width:60em) {
   .container {
     width: 75%;
@@ -247,3 +252,39 @@ p {
     height:auto;
   }
 } */
+
+
+
+.image-gallery-slides::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho de la barra de desplazamiento */
+    height: 10px;
+    /* Altura de la barra de desplazamiento horizontal */
+  }
+
+  .image-gallery-slides::-webkit-scrollbar-track {
+    background: #eab33c;
+    /* Color del fondo de la pista */
+    border-radius: 10px;
+    /* Bordes redondeados */
+  }
+
+  .image-gallery-slides::-webkit-scrollbar-thumb {
+      background: #444444;
+      /* Color del deslizador */
+      border-radius: 10px;
+      /* Bordes redondeados del deslizador */
+      border: 2px solid #1e1e1e;
+      /* Espaciado entre el deslizador y la pista */
+  }
+
+    .image-gallery-slides::-webkit-scrollbar-thumb:hover {
+      background: #555555;
+      /* Color del deslizador al pasar el mouse */
+    }
+
+    /* Soporte para navegadores con pseudo-elementos ::scrollbar en el futuro */
+    *{
+      scrollbar-color: #fff #1e1e1e;
+      scrollbar-width: thin;
+    }
