@@ -22,6 +22,8 @@
 
   .services-section {
     height:auto;
+    background-size: contain; /* Ajusta la imagen para que cubra todo el div */
+    background-repeat: repeat; /* Evita que la imagen se repita */
   }
   /* Estilos para teléfonos pequeños */
   .services-section .content {
