@@ -61,6 +61,12 @@
   background:black;
 }
 
+.hamburger-menu .close-button{
+
+  margin-bottom: 20px;
+
+}
+
 .hamburger {
   background: none;
   border: none;
@@ -134,6 +140,9 @@
 }
 
 
+.ul-wrapper span img {
+  width: 10%;
+}
 /* Ocultar un componente en pantallas más grandes (por ejemplo, tabletas y computadoras) */
 @media (min-width: 768px) {
   .hamburger-menu {
