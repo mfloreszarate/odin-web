@@ -79,7 +79,8 @@
 @media (min-width: 320px) and (max-width: 480px) {
   /* Estilos para teléfonos pequeños */
   .experience {
-    height:calc(100vh);
+    height:calc(103vh);
+    padding-left:1rem
   }
   .experience-content {
     width: 99%;
@@ -87,6 +88,7 @@
   }
   .experience-description {
     font-size: 1.8rem;
+    /* padding-left:1rem; */
   }
   .experience-content .info {
       width: 100%;
@@ -98,7 +100,7 @@
     gap:0.5rem;
   } */
   .overlay-detail {
-    height: 25%;
+    height: auto;
   }
   .experience-description-text {
     font-size: 1rem;
