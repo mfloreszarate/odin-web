@@ -1,6 +1,5 @@
 
 import styles from './service-item.module.css';
-import ServiceIcon from './../../../assets/icons/service-icon-2.svg'
 
 interface Props {
   title: string,

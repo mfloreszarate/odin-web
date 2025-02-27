@@ -1,7 +1,6 @@
 import { ServiceItem } from './item/ServiceItem'
 import './services.css'
 import GrannyImg from './../../assets/img/granny-img.png'
-import financiadas from './../../assets/img/financiadas.png'
 
 export const Services = () => {
 
