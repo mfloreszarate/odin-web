@@ -17,9 +17,20 @@ export default function Experience() {
             Hacemos realidad tus ideas
           </div>
           <div className='text-shadow experience-description-text'>
-            En nuestra empresa, transformamos ideas en realidades extraordinarias. Con un equipo apasionado y comprometido, vivimos bajo el lema: “El resultado de nuestro trabajo refleja la dedicación y el empeño que ponemos en cada proyecto”.
-            Nos especializamos en llevar tus ideas a otro nivel, superando expectativas y acompañándote en cada paso del camino.
-            Contamos con un equipo propio de arquitectos y diseñadores que crean proyectos innovadores, como nuestras exclusivas Granni House y Casas Financiadas. Además, desarrollamos proyectos a medida, dando vida a la visión única de cada cliente.
+            En Odín Construcciones, un grupo humano de profesionales en permanente capacitación y desarrollo personal,
+            ponen todo su empeño y talento al servicio de Nuestros Clientes, pequeños y grandes, nuevos y ya fidelizados, todos
+            tienen a su disposición nuestro esfuerzo y compromiso para llevar adelante cada Proyecto y materializar sus Ideas.
+            Somos consientes de que nuestro mundo es dinámico, cambiante, y exige que nuestra Organización se adapte a cada
+            situación y particularidad de aquellos que nos eligen.
+            Sabemos Escuchar y visualizar tus ideas.
+            Proyectamos y Construimos sobre cimientos sólidos.
+            Comprometidos y responsables, valorando el esfuerzo de cada persona que llega a nosotros, invirtiendo sus recursos,
+            esperando resultados óptimos, nos encargamos de superar expectativas.
+            Tenés una Idea? Nosotros te escuchamos, te Orientamos y te proponemos un Plan
+            Construímos con sistemas Tradicionales
+            Desarrollamos unidades con nuevos e innovadores sistemas constructivos: Wood Frame, Steel Frame.
+            Construimos desde cero, remodelamos o ampliamos viviendas particulares, edificios y estructuras comunitarias.
+            Diseñamos Planes que se adaptan a tu presupuesto y alcanzamos la satisfacción de nuestros Clientes
 
           </div>
         </div>

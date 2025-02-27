@@ -2,9 +2,10 @@ import Slider from "react-slick";
 import BackArrowIcon from './../../../assets/icons/back-arrow.svg'
 import NewtArrowIcon from './../../../assets/icons/next-arrow.svg'
 // import PepsiImg from './../../../assets/img/pepsi.png'
-import CocaColaImg from './../../../assets/img/cocacola.png'
-import BbvaImg from './../../../assets/img/bbva.png'
-import FordImg from './../../../assets/img/ford.png'
+import ErgyImg from './../../../assets/img/ergy.png'
+import MyMImg from './../../../assets/img/mym.png'
+import IesImg from './../../../assets/img/ies.png'
+import AbsImg from './../../../assets/img/abs.png'
 
 import './brands.css'
 function SamplePrevArrow({ onClick }: any) {
@@ -47,29 +48,29 @@ export const Brands = () => {
       <Slider {...settings}>
         <div className="my-slider">
           <h3>
-            <img src={CocaColaImg} alt="brand1" className="brand-img" />
+            <img src={ErgyImg} alt="brand1" className="brand-img" />
           </h3>
         </div>
         <div className="my-slider">
+          <h3>
+            <img src={MyMImg} alt="brand1" className="brand-img" />
+          </h3>
+        </div>
+        <div className="my-slider">
+          <h3>
+            <img src={IesImg} alt="brand1" className="brand-img" />
+          </h3>
+        </div>
+        <div className="my-slider">
+          <h3>
+            <img src={AbsImg} alt="brand1" className="brand-img" />
+          </h3>
+        </div>
+        {/* <div className="my-slider">
           <h3>
             <img src={BbvaImg} alt="brand1" className="brand-img" />
           </h3>
-        </div>
-        <div className="my-slider">
-          <h3>
-            <img src={FordImg} alt="brand1" className="brand-img" />
-          </h3>
-        </div>
-        <div className="my-slider">
-          <h3>
-            <img src={CocaColaImg} alt="brand1" className="brand-img" />
-          </h3>
-        </div>
-        <div className="my-slider">
-          <h3>
-            <img src={BbvaImg} alt="brand1" className="brand-img" />
-          </h3>
-        </div>
+        </div> */}
       </Slider>
     </div>
 

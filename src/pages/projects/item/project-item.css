@@ -27,13 +27,14 @@
   width: 100%;
   display: flex;
   align-items: center;
-  /* align-content: center; */
+  align-content: center;
   justify-content: center;
   height: 100%;
   color: #ffff;
   font-weight: 600;
   font-size: 2rem;
   text-align:center;
+  flex-wrap: wrap;
   /* padding-left:1rem;
   padding-right: 1rem; */
 }
@@ -41,7 +42,14 @@
   margin-left:1rem;
   margin-right: 1rem;
   font-size: 1.8rem;
+  width: 100%;
 }
+.project-detail .description {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color:#eab33c;
+}
+
 /*
 .project-detail .description {
   display: block;

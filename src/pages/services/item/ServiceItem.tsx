@@ -4,22 +4,30 @@ import ServiceIcon from './../../../assets/icons/service-icon-2.svg'
 
 interface Props {
   title: string,
-  description: string
+  description: string,
+  viewMore?: boolean,
+  image: string,
+  onClick?: () => void
 }
-export const ServiceItem = ({ title, description }: Props) => {
+export const ServiceItem = ({ title, description, viewMore = false, image, onClick: handleClick }: Props) => {
 
   return (
-    <div className={styles.item}>
+    <div className={styles.item}  >
       <div className={styles.title}>
-        <ServiceIcon></ServiceIcon>
-        <span className={styles.inlineImg}>
+        {/* <ServiceIcon></ServiceIcon> */}
+        <img src={image} alt="img" />
+        {/* <span className={styles.inlineImg}>
           <ServiceIcon></ServiceIcon>
-        </span>
+        </span> */}
         {title}
       </div>
       <div className={styles.description}>
         {description}
+        {viewMore &&
+          <div className={styles.pdfLink} onClick={handleClick} >Ver mas..</div>
+        }
       </div>
+
     </div>
   )
 }

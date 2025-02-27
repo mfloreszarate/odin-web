@@ -14,6 +14,7 @@ export const Projects = () => {
               backgroundImage={project.backgroundImage}
               name={project.name}
               id={project.id}
+              description={project.description}
             />
           )
         })

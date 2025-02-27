@@ -12,14 +12,15 @@
   color: white; /* Color del texto sobre la imagen */
   padding-top: 2rem;
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: auto;
+  height: 60%;
+  align-items:center;
 }
 .experience-content .info {
-  flex:3;
+  flex:4;
 }
 .experience-content .info-years {
-  width: 50%;
   text-align: right;
   font-weight: 700;
   font-size: 90px;
@@ -81,7 +82,8 @@
     height:calc(100vh);
   }
   .experience-content {
-    width: 95%;
+    width: 99%;
+    height:auto;
   }
   .experience-description {
     font-size: 1.8rem;
@@ -99,7 +101,7 @@
     height: 25%;
   }
   .experience-description-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -111,11 +113,12 @@
   }
 
   .experience-content {
-      width: 80%;
+      width: 90%;
+      /* height:auto; */
     }
 
     .experience-description {
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
 
     .experience-content .info {
@@ -131,40 +134,60 @@
     } */
 
     .overlay-detail {
-      height: 30%;
+      height: 20%;
     }
 
     .experience-description-text {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
 }
 
 /* Intervalo para pantallas de escritorio grandes (1200px y más) */
 @media (min-width: 1024px) and (max-width: 1299px)  {
 
+  .experience-description {
+    font-size: 3rem ;
+    font-weight: 700;
+  }
+
+  .info-years .number {
+    font-size: 2em;
+    line-height: 1;
+  }
   /* Estilos para pantallas de escritorio grandes */
   .experience {
     height:60rem;
   }
 
   .experience-description-text {
-      font-size: 1.4rem;
-      width:85%
+      font-size: 1.2rem;
+      width:90%
     }
 }
 
 @media (min-width: 1300px) and (max-width: 1600px) {
+
 .experience {
     height:100vh;
+  }
+
+  .experience-description {
+    font-size: 3rem;
   }
 
   .experience-description-text {
       font-size: 1.1rem;
       width:85%
     }
+    .experience-content .info-years {
+      font-size: 5rem;
+    }
 }
 
 @media (min-width: 1601px) {
+  .experience-content {
+    width: 80%;
+  }
   .experience {
     height:100vh;
   }

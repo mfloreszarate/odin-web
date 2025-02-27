@@ -4,9 +4,10 @@ import { useNavigate } from 'react-router-dom';
 interface ProjectProps {
   name: string,
   backgroundImage: any,
-  id: number
+  id: number,
+  description: string,
 }
-export const ProjectItem = ({ name, backgroundImage, id }: ProjectProps) => {
+export const ProjectItem = ({ name, backgroundImage, id, description }: ProjectProps) => {
 
   const navigate = useNavigate()
 
@@ -22,6 +23,8 @@ export const ProjectItem = ({ name, backgroundImage, id }: ProjectProps) => {
       <div className="project-item-overlay"></div>
       <div className="project-detail">
         <span>{name}</span>
+        <div className='description'>{description}</div>
+
         {/* <ImageGalleryModal
           isOpen={isOpen}
           setIsOpen={setIsOpen}

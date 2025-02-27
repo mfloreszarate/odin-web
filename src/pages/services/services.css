@@ -9,12 +9,14 @@
 
 
 .services-section .content {
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   height: 100%;
-  align-items: center;
+  align-items: flex-start;
+
 }
 
 /* Intervalo para teléfonos pequeños (320px a 480px) */
@@ -33,7 +35,15 @@
 
 /* Intervalo para tablets (768px a 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
+
   /* Estilos para tablets */
+  .services-section {
+      height: auto;
+      background-size: contain;
+      /* Ajusta la imagen para que cubra todo el div */
+      background-repeat: repeat;
+      /* Evita que la imagen se repita */
+    }
   .services-section {
     height:auto;
   }

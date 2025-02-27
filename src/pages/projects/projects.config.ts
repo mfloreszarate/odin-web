@@ -36,11 +36,12 @@ import sanMartin5 from './../../assets/img/proyectos/calle-san-martin/5.jpg'
 import sanMartin10 from './../../assets/img/proyectos/calle-san-martin/10.jpg'
 import sanMartin11 from './../../assets/img/proyectos/calle-san-martin/11.jpg'
 
-export type ProjectItemType = { id: number, name: string, images: { original: string; thumbnail: string }[], backgroundImage: string }
+export type ProjectItemType = { id: number, name: string, images: { original: string; thumbnail: string }[], backgroundImage: string, description: string }
 export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 1,
     name: 'Parque Industrial',
+    description: 'MONTAJES INDUSTRIALES CONSTRUCCION DE GALPONES/TINGLADOS',
     images: [
       { original: pqIndustrial1, thumbnail: pqIndustrial1 },
       { original: pqIndustrial2, thumbnail: pqIndustrial2 },
@@ -53,6 +54,7 @@ export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 2,
     name: 'Los Profesionales',
+    description: 'SISTEMA DE CONSTRUCCION TRADICIONAL',
     images: [
       { original: losProf1, thumbnail: losProf1 },
       { original: losProf2, thumbnail: losProf2 },
@@ -66,6 +68,7 @@ export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 3,
     name: 'Asociación Bioquímica de Salta (Centro)',
+    description: 'GRANDES REMODELACIONES, AMPLIACION DE INSTALACIONES AUXILIARES, AGUA, ELECTRICIDAD, ADECUACION DE ESPACIOS',
     images: [
       { original: bioqCtro1, thumbnail: bioqCtro1 },
       { original: bioqCtro3, thumbnail: bioqCtro3 },
@@ -78,6 +81,7 @@ export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 4,
     name: 'Asociación Bioquímica de Salta (Cerrillos)',
+    description: 'RENOVACIONES Y MODERNIZACION DE ESPACIOS',
     images: [
       { original: bioqCerr1, thumbnail: bioqCerr1 },
       { original: bioqCerr2, thumbnail: bioqCerr2 },
@@ -89,6 +93,7 @@ export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 5,
     name: 'Anteproyecto Campo Quijano',
+    description: 'DISEÑO DE ANTEPROYECTO, RENDERIZADO DE AMBIENTES.',
     images: [
       { original: quijano1, thumbnail: quijano1 },
       { original: quijano2, thumbnail: quijano2 },
@@ -101,6 +106,7 @@ export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 6,
     name: 'Anteproyecto calle San Martín',
+    description: 'CONSTRUCCION POR ETAPAS',
     images: [
       { original: sanMartin1, thumbnail: sanMartin1 },
       { original: sanMartin3, thumbnail: sanMartin3 },
