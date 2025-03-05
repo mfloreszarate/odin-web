@@ -7,7 +7,6 @@ import TikTokIcon from './../../.../../../assets/img/tik-tok.png'
 export const Footer = () => {
 
   const [email, setEmail] = useState<string>('')
-  const [isMobile, setIsMobile] = useState<boolean>(false)
 
   const onChangeEmail = (event: any) => {
     const value = event.target.value
