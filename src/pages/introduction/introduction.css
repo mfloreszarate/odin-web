@@ -1,11 +1,7 @@
-/* .color-red {
-  background-color: red;
-} */
 .video-container {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  /* La altura será del 100% de la ventana */
   overflow: hidden;
 }
 
@@ -18,14 +14,4 @@
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: -1;
-  /* Coloca el video detrás del contenido */
-}
-
-.contenido {
-  position: relative;
-  z-index: 1;
-  /* Asegura que el contenido esté por encima del video */
-  color: black;
-  text-align: center;
-  padding: 20px;
 }

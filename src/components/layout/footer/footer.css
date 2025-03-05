@@ -71,8 +71,20 @@ footer .contact .title {
   cursor: pointer;
 }
 
+#mobile-social-icons{
+  display: none;
+}
 
  @media (min-width: 320px) and (max-width: 767px) {
+
+  #desktop-social-icons {
+    display: none;
+  }
+
+  #mobile-social-icons {
+      display: flex;
+      margin-bottom: 1rem;
+  }
 
   .grid-item {
     width: 100%;
@@ -83,8 +95,12 @@ footer .contact .title {
     margin: auto;
     padding-left: 0 !important;
     padding-right: 0 !important;
-
+    font-size:0.9rem;
   }
+
+    footer .contact .title {
+      font-size: 1.5rem;
+    }
 
   .footer  {
     display:flex;
@@ -98,11 +114,15 @@ footer .contact .title {
     padding-right: 0;
     width: 80%;
     margin: auto;
+    font-size: 0.9rem;
   }
   .map {
     display: none;
   }
 
+    .subscribe-button{
+      padding:0.9rem 1.5rem 1rem 1.5rem;
+    }
   .footer input {
     width: 100%;
   }
@@ -122,6 +142,7 @@ footer .contact .title {
  }
 
  @media (min-width: 768px) and (max-width: 1023px) {
+
     .grid-item {
       width: 50%;
       }

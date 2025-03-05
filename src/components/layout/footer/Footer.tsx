@@ -7,6 +7,7 @@ import TikTokIcon from './../../.../../../assets/img/tik-tok.png'
 export const Footer = () => {
 
   const [email, setEmail] = useState<string>('')
+  const [isMobile, setIsMobile] = useState<boolean>(false)
 
   const onChangeEmail = (event: any) => {
     const value = event.target.value
@@ -21,7 +22,7 @@ export const Footer = () => {
         <div>Salta, Argentina</div>
         <div>+54-3872 64-7777</div>
         <div>odinconstruccionessrl@gmail.com</div>
-        <div className='social-icons'>
+        <div className='social-icons' id='desktop-social-icons'>
           <a href="https://www.instagram.com/odin.construcciones/profilecard/?igsh=Y2cwM3k5dHMxNTBl">
             <img src={InstagramIcon} alt="src" />
           </a>
@@ -44,6 +45,17 @@ export const Footer = () => {
           <button type='button' className='subscribe-button c-pointer'>
             Suscríbete
           </button>
+        </div>
+        <div className='social-icons' id='mobile-social-icons' >
+          <a href="https://www.instagram.com/odin.construcciones/profilecard/?igsh=Y2cwM3k5dHMxNTBl">
+            <img src={InstagramIcon} alt="src" />
+          </a>
+          <a href="https://www.facebook.com/odin.construcciones?locale=es_LA">
+            <img src={FacebookIcon} alt="src" />
+          </a>
+          <a href="https://www.tiktok.com/@odinconstrucciones?_t=8rmJuOfoAEi&_r=1">
+            <img src={TikTokIcon} alt="src" />
+          </a>
         </div>
       </div>
       <div className="grid-item map">

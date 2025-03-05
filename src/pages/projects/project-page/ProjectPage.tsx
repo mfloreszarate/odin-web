@@ -31,8 +31,10 @@ export const ProjectPage = () => {
             <div>
               <ImageGallery showThumbnails={false}
                 items={item.images}
+                autoPlay={true}
               />
             </div>
+            {/* <div style={{ padding: '1rem', textAlign: 'center' }}>{item.description}</div> */}
           </section>
         }
         <Footer />

@@ -21,7 +21,7 @@
   margin-top: 1rem;
 }
 .clients-section .title {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: 700;
   /* align-items: center; */
   /* justify-content: center; */
@@ -48,7 +48,12 @@
     width: 100%;
     height: auto;
   }
-
+  .clients-section .title {
+    margin-top:1rem;
+    font-size:1.5rem;
+    padding:10px;
+    box-sizing: border-box;
+  }
   .clients-section .reviews {
     display: block;
   }
@@ -62,6 +67,10 @@
   .clients-section {
       width: 100%;
       height: auto;
+  }
+    .clients-section .title {
+    /* margin-top:0.5rem; */
+    font-size:2rem;
   }
   .clients-section .reviews {
     display: flex;
