@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import styles from './service-item.module.css';
 
 interface Props {
@@ -6,27 +7,26 @@ interface Props {
   description: string,
   viewMore?: boolean,
   image: string,
-  onClick?: () => void
+  hoverImg: string
 }
-export const ServiceItem = ({ title, description, viewMore = false, image, onClick: handleClick }: Props) => {
+export const ServiceItem = ({ title, description, image, hoverImg }: Props) => {
+
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className={styles.item}  >
+    <div className={styles.item}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}>
       <div className={styles.title}>
-        {/* <ServiceIcon></ServiceIcon> */}
-        <img src={image} alt="img" />
-        {/* <span className={styles.inlineImg}>
-          <ServiceIcon></ServiceIcon>
-        </span> */}
+        <img
+          src={!isHovered ? image : hoverImg}
+          className={styles.rotateOnHover}
+          alt="img" />
         {title}
       </div>
       <div className={styles.description}>
         {description}
-        {viewMore &&
-          <div className={styles.pdfLink} onClick={handleClick} >Ver mas..</div>
-        }
       </div>
-
     </div>
   )
 }

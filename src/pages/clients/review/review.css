@@ -1,7 +1,6 @@
 .review {
-  /* margin-top: 4rem; */
-  width: 30%;
-  /* border:1px solid black; */
+  width: 23%;
+  height:100%
 }
 
 
@@ -14,16 +13,26 @@
 
 .review .content {
   background-color: #eab33c;
-  padding: 20px;
+  padding: 15px;
   font-size: 1rem;
   border-radius: 10px;
   color:#ffff;
+  height:70%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.review .content:hover{
+  transform: scale(1.1);
 }
 
 .review .client-name{
   padding: 20px;
   font-weight: 700;
   color:#333333;
+  height: 20%;
 }
 
 /* Intervalo para teléfonos pequeños (320px a 480px) */

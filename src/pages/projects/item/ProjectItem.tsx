@@ -1,6 +1,7 @@
 
 import './project-item.css'
 import { useNavigate } from 'react-router-dom';
+import Skyline from './test';
 interface ProjectProps {
   name: string,
   backgroundImage: any,
@@ -24,14 +25,8 @@ export const ProjectItem = ({ name, backgroundImage, id, description }: ProjectP
       <div className="project-detail">
         <span>{name}</span>
         <div className='description'>{description}</div>
-
-        {/* <ImageGalleryModal
-          isOpen={isOpen}
-          setIsOpen={setIsOpen}
-          title={name}
-          images={images}
-        /> */}
       </div>
+
     </div>
 
   )

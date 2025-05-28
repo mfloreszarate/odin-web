@@ -9,7 +9,7 @@ interface Props {
 export const ExperienceItem = ({ icon, primaryDescription, secondaryDescription }: Props) => {
   return (
     <div className={style.item}>
-      <img src={icon} alt="icon" />
+      <img src={icon} className={style.floatAnimation} />
       <span className={style.spanNumber}>{primaryDescription}</span>
       <span className={style.secondaryDescription}>{secondaryDescription}</span>
     </div>

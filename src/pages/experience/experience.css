@@ -5,8 +5,15 @@
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   position: relative; /* Para que el contenido esté sobre la imagen */
   height:100vh;
-}
 
+}
+.construction-icon {
+    /* position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; */
+    animation: float 3s ease-in-out infinite;
+  }
 .experience-content {
   position: relative;
   color: white; /* Color del texto sobre la imagen */

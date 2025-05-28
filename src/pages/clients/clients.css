@@ -33,6 +33,8 @@
 .clients-section .reviews {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+
 }
 .clients-section .brands-wrapper {
   padding-top: 3rem;

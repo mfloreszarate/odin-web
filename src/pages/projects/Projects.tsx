@@ -1,6 +1,7 @@
 import { ProjectItem } from "./item/ProjectItem"
 import './projects.css'
 import { projectsConfiguration } from "./projects.config"
+import CraneOnly from "./item/test"
 
 export const Projects = () => {
 
@@ -21,5 +22,6 @@ export const Projects = () => {
       }
 
     </div>
+    // <CraneOnly></CraneOnly>
   )
 }

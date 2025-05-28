@@ -1,9 +1,15 @@
 
-import pqIndustrial1 from './../../assets/img/proyectos/parque-industrial/avances/1.jpeg'
-import pqIndustrial2 from './../../assets/img/proyectos/parque-industrial/avances/2.jpeg'
-import pqIndustrial3 from './../../assets/img/proyectos/parque-industrial/avances/3.jpeg'
-import pqIndustrial4 from './../../assets/img/proyectos/parque-industrial/avances/4.jpeg'
-import pqIndustrial5 from './../../assets/img/proyectos/parque-industrial/avances/5.jpeg'
+// import pqIndustrial1 from './../../assets/img/proyectos/parque-industrial/avances/1.jpeg'
+// import pqIndustrial2 from './../../assets/img/proyectos/parque-industrial/avances/2.jpeg'
+// import pqIndustrial3 from './../../assets/img/proyectos/parque-industrial/avances/3.jpeg'
+// import pqIndustrial4 from './../../assets/img/proyectos/parque-industrial/avances/4.jpeg'
+// import pqIndustrial5 from './../../assets/img/proyectos/parque-industrial/avances/5.jpeg'
+
+
+import pqIndustrial1 from './../../assets/img/proyectos/parque-industrial/avances/OneDrive_3_29-4-2025/1.png'
+import pqIndustrial2 from './../../assets/img/proyectos/parque-industrial/avances/OneDrive_3_29-4-2025/2.png'
+import pqIndustrial3 from './../../assets/img/proyectos/parque-industrial/avances/OneDrive_3_29-4-2025/3.png'
+
 
 import losProf1 from './../../assets/img/proyectos/los-profesionales/AVANCES/9.jpeg'
 import losProf2 from './../../assets/img/proyectos/los-profesionales/AVANCES/1.jpeg'
@@ -46,8 +52,8 @@ export const projectsConfiguration: ProjectItemType[] = [
       { original: pqIndustrial1, thumbnail: pqIndustrial1 },
       { original: pqIndustrial2, thumbnail: pqIndustrial2 },
       { original: pqIndustrial3, thumbnail: pqIndustrial3 },
-      { original: pqIndustrial4, thumbnail: pqIndustrial4 },
-      { original: pqIndustrial5, thumbnail: pqIndustrial5 },
+      // { original: pqIndustrial4, thumbnail: pqIndustrial4 },
+      // { original: pqIndustrial5, thumbnail: pqIndustrial5 },
     ],
     backgroundImage: pqIndustrial1
   },

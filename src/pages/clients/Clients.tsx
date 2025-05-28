@@ -14,19 +14,21 @@ export const Clients = () => {
       <div className='client-wrapper'>
         <div className="reviews">
           <Review
-            clientImg={ClientImg}
-            clientName='Olga Salfity Saade'
-            content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error eum nam soluta ipsam esse iste velit obcaecati accusantium. Sit odit velit rem recusandae quod eveniet dolorem tempora omnis nisi!'
+            clientName='Rodrigo Martinez'
+            content='"La verdad que nos sentimos muy cómodos trabajando con ud. Son muy resolutivos, eficaces y honestos. Lo de el acompañamiento en la compra de materiales a pesar de haber contratado como contratistas fue genial"'
           />
           <Review
-            clientImg={ClientImg}
-            clientName='Nahir Troncoso'
-            content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error eum nam soluta ipsam esse iste velit obcaecati accusantium. Sit odit velit rem recusandae quod eveniet dolorem tempora omnis nisi!'
+            clientName='Facundo del Castillo'
+            content='"Ver como avanzamos semana tras semana me gusta. Como también todo su asesoramiento para agarrar este proyecto que había sido comenzado por otro"'
           />
           <Review
-            clientImg={ClientImg}
-            clientName='Cristian Copa'
-            content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error eum nam soluta ipsam esse iste velit obcaecati accusantium. Sit odit velit rem recusandae quod eveniet dolorem tempora omnis nisi!'
+            clientName='Silvia Dib Ashur'
+            content='"Solucion, después de pasar por varios profesionales, fue una solución encontrarlos ya que me trasmitieron la confianza y seriedad necesaria para realizar las cosas"'
+          />
+
+          <Review
+            clientName='Claudia Ovalle'
+            content='"Me siento super contenta de la remodelacion, sobre todo el respeto de tu gente. Somos 3 mujeres solas así que no fue fácil encontrar gente tan respetuosa y educada. Gracias por todo"'
           />
 
         </div>

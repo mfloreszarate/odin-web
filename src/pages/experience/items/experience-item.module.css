@@ -11,10 +11,11 @@
 .secondaryDescription {
   font-size:0.8rem;
   text-align: center;
+
 }
 .spanNumber {
   font-size: 4.5em;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .item img{
@@ -62,5 +63,20 @@
 @media (min-width: 1024px) {
    .secondaryDescription {
     font-size:1.1rem;
+  }
+}
+
+.floatAnimation {
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

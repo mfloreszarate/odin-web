@@ -5,30 +5,27 @@
   /* padding: 1rem 1.5rem 1rem 1.5rem; */
   transition: transform 0.3s ease;
   /* border:1px solid red; */
-  padding:0.5rem;
-
+  padding: 0.5rem;
 }
 .item svg {
-  min-width:60px;
+  min-width: 60px;
   height: 70px;
 }
 .item:hover {
   background-color: #eab33c;
-  color:white;
+  color: white;
   box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
-.item:hover  svg {
-  fill:white !important;
+.item:hover svg {
+  fill: white !important;
 }
-.item .pdfLink{
-  text-decoration: underline;
-   color: #eab33c;
-    font-weight: 700;
+
+.item:hover .title {
+  color: white;
 }
-.item:hover .pdfLink {
-  color:white !important;
-  cursor:pointer;
+.item:hover .description {
+  color: white;
 }
 
 .item .title {
@@ -36,18 +33,20 @@
   font-size: 1.8rem;
   margin-left: 30px;
   font-weight: 700;
-  display:flex;
+  display: flex;
   align-items: center;
   gap: 1rem;
+  color: #333333;
 }
 
 .item .description {
-  margin-top:1rem;
-  margin-left:30px;
+  margin-top: 1rem;
+  margin-left: 30px;
   margin-bottom: 1rem;
+  color: #333333;
 }
 .item img {
-  width:60px ;
+  width: 60px;
 }
 .inlineImg {
   width: 60px;
@@ -57,75 +56,80 @@
 @media (min-width: 320px) and (max-width: 767px) {
   /* Estilos para teléfonos pequeños */
   .item {
-    width:95%;
-    margin:0.5rem;
+    width: 95%;
+    margin: 0.5rem;
   }
   .item .description {
-    margin:1rem;
+    margin: 1rem;
   }
-    .item img {
-     display: none;
-     margin-left: 0;
-    }
-    /* .item .inlineImg {
+  .item img {
+    display: none;
+    margin-left: 0;
+  }
+  /* .item .inlineImg {
       display: block;
     } */
-    .item .title {
-      display: flex;
-      padding-left: 0;
-      gap:1rem;
-      font-size: 1.5rem;
-      margin-left: 0;
-    }
-    .item .description {
-      margin-top: 0.5rem;
-      margin-left: 1rem;
-      margin-bottom: 0.5rem;
-    }
+  .item .title {
+    display: flex;
+    padding-left: 0;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  .item .description {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
 }
-
 
 /* Intervalo para tablets (768px a 1023px) */
 @media (min-width: 768px) and (max-width: 1199px) {
   /* Estilos para tablets */
   .item {
-      width: 40%;
-      margin: 0.5rem;
+    padding-top: 1rem;
+    width: 40%;
+    margin: 0.5rem;
+  }
 
-    }
+  .item .description {
+    margin: 1rem;
+  }
 
-    .item .description {
-      margin: 1rem;
-    }
+  .item img {
+    display: none;
+    margin-left: 0;
+  }
 
-    .item img {
-      display: none;
-      margin-left: 0;
-    }
+  .item .title {
+    display: flex;
+    padding-left: 0;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-left: 0;
+    display: inline;
+    margin-left: 1rem;
+    /* justify-content: center; */
+  }
 
-    .item .title {
-      display: flex;
-      padding-left: 0;
-      gap: 1rem;
-      font-size: 1.5rem;
-      margin-left: 0;
-    }
-
-    .item .description {
-      margin-top: 0.5rem;
-      margin-left: 1rem;
-      margin-bottom: 0.5rem;
-    }
+  .item .description {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    /* font-size: 1rem; */
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
-.item {
+  .item {
     width: 45%;
     margin: 0.5rem;
-    padding:1rem;
-    font-size:0.9rem;
+    padding: 1rem;
   }
-
+  .item .title {
+    font-size: 1.3rem;
+  }
   /* .item .description {
     margin: 1rem;
   }
@@ -135,10 +139,9 @@
   }
 
   .item .title {
-     display: flex;
+    display: flex;
     padding-left: 0;
-    /* gap: 1rem; */
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 0;
   }
 
@@ -146,5 +149,19 @@
     margin-top: 0.5rem;
     margin-left: 0;
     margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+
   }
+}
+@keyframes rotateOnce {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotateOnHover:hover {
+  animation: rotateOnce 0.6s ease;
 }
