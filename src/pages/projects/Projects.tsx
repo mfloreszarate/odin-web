@@ -1,12 +1,11 @@
 import { ProjectItem } from "./item/ProjectItem"
 import './projects.css'
 import { projectsConfiguration } from "./projects.config"
-import CraneOnly from "./item/test"
 
 export const Projects = () => {
 
   return (
-    <div className="project-section" id="projects">
+    <div className="flex-container-projects" id="projects">
       {
         projectsConfiguration.map((project) => {
           return (
@@ -20,8 +19,6 @@ export const Projects = () => {
           )
         })
       }
-
     </div>
-    // <CraneOnly></CraneOnly>
   )
 }

@@ -6,7 +6,7 @@
 // import pqIndustrial5 from './../../assets/img/proyectos/parque-industrial/avances/5.jpeg'
 
 
-import pqIndustrial1 from './../../assets/img/proyectos/parque-industrial/avances/OneDrive_3_29-4-2025/1.png'
+import pqIndustrial1 from './../../assets/img/proyectos/parque-industrial/avances/OneDrive_3_29-4-2025/4.jpeg'
 import pqIndustrial2 from './../../assets/img/proyectos/parque-industrial/avances/OneDrive_3_29-4-2025/2.png'
 import pqIndustrial3 from './../../assets/img/proyectos/parque-industrial/avances/OneDrive_3_29-4-2025/3.png'
 
@@ -47,7 +47,7 @@ export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 1,
     name: 'Parque Industrial',
-    description: 'MONTAJES INDUSTRIALES CONSTRUCCION DE GALPONES/TINGLADOS',
+    description: 'Montajes industriales construccion de galpones/tinglados',
     images: [
       { original: pqIndustrial1, thumbnail: pqIndustrial1 },
       { original: pqIndustrial2, thumbnail: pqIndustrial2 },
@@ -60,7 +60,7 @@ export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 2,
     name: 'Los Profesionales',
-    description: 'SISTEMA DE CONSTRUCCION TRADICIONAL',
+    description: 'Sistema de construccion tradicional.',
     images: [
       { original: losProf1, thumbnail: losProf1 },
       { original: losProf2, thumbnail: losProf2 },
@@ -73,8 +73,8 @@ export const projectsConfiguration: ProjectItemType[] = [
   },
   {
     id: 3,
-    name: 'Asociación Bioquímica de Salta (Centro)',
-    description: 'GRANDES REMODELACIONES, AMPLIACION DE INSTALACIONES AUXILIARES, AGUA, ELECTRICIDAD, ADECUACION DE ESPACIOS',
+    name: 'Asociación Bioquímica de Salta (centro)',
+    description: 'Remodelaciones, ampliacion de instalaciones ,agua, electricidad.',
     images: [
       { original: bioqCtro1, thumbnail: bioqCtro1 },
       { original: bioqCtro3, thumbnail: bioqCtro3 },
@@ -87,7 +87,7 @@ export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 4,
     name: 'Asociación Bioquímica de Salta (Cerrillos)',
-    description: 'RENOVACIONES Y MODERNIZACION DE ESPACIOS',
+    description: 'Renovaciones y modernizacion de espacios.',
     images: [
       { original: bioqCerr1, thumbnail: bioqCerr1 },
       { original: bioqCerr2, thumbnail: bioqCerr2 },
@@ -99,7 +99,7 @@ export const projectsConfiguration: ProjectItemType[] = [
   {
     id: 5,
     name: 'Anteproyecto Campo Quijano',
-    description: 'DISEÑO DE ANTEPROYECTO, RENDERIZADO DE AMBIENTES.',
+    description: 'Diseño de anteproyecto, renderizado de ambientes.',
     images: [
       { original: quijano1, thumbnail: quijano1 },
       { original: quijano2, thumbnail: quijano2 },
@@ -111,8 +111,8 @@ export const projectsConfiguration: ProjectItemType[] = [
   },
   {
     id: 6,
-    name: 'Anteproyecto calle San Martín',
-    description: 'CONSTRUCCION POR ETAPAS',
+    name: 'Anteproyecto Calle San Martín',
+    description: 'Construccion por etapas.',
     images: [
       { original: sanMartin1, thumbnail: sanMartin1 },
       { original: sanMartin3, thumbnail: sanMartin3 },
