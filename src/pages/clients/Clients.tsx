@@ -1,6 +1,5 @@
 import './clients.css'
 import { Review } from './review/Review'
-import ClientImg from './../../assets/img/client-img.png'
 import { Brands } from './brands/Brands'
 
 export const Clients = () => {

@@ -6,6 +6,11 @@ export const Projects = () => {
 
   return (
     <div className="flex-container-projects" id="projects">
+      <div className="projects-title">
+        Proyectos
+        <div className="separator"></div>
+      </div>
+
       {
         projectsConfiguration.map((project) => {
           return (

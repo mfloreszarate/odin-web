@@ -17,6 +17,10 @@ export const Services = () => {
 
   return (
     <section className="services-section" id='services'>
+      <div className="services-title">
+        Nuestros servicios
+        <div className="separator"></div>
+      </div>
       <div className="content">
         <ServiceItem
           title='Casas financiadas'
