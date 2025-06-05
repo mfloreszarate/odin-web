@@ -7,7 +7,7 @@ export const Clients = () => {
   return (
     <section className="clients-section" id='clients'>
       <div className="title">
-        Clientes satisfechos
+        CLIENTE SATISFECHOS
         <div className="separator"></div>
       </div>
       <div className='client-wrapper'>

@@ -39,8 +39,9 @@
 @media (min-width: 320px) and (max-width: 767px) {
   /* Estilos para teléfonos pequeños */
   .review {
-   width: 90%;
+   width: 55%;
    margin:auto;
+   height:auto
   }
 }
 

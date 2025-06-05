@@ -14,12 +14,11 @@ import BigPlanImg from './../../assets/img/services/ampliacion.png'
 import BigPlainHoverImg from './../../assets/img/services/ampliacion-hover.png'
 
 export const Services = () => {
-
   return (
     <section className="services-section" id='services'>
       <div className="services-title">
-        Nuestros servicios
-        <div className="separator"></div>
+        NUESTROS SERVICIOS
+      <div className="separator"></div>
       </div>
       <div className="content">
         <ServiceItem

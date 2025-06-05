@@ -21,12 +21,10 @@
   margin-top: 1rem;
 }
 .clients-section .title {
-  font-size: 2.1rem;
+  font-size: 1.7rem;
+  color:#333;
   font-weight: 700;
-  /* align-items: center; */
-  /* justify-content: center; */
   text-align: center;
-  /* display: flex; */
   width: 100%;
   padding-bottom: 1rem;
 }
@@ -86,11 +84,4 @@
     .clients-section .client-wrapper {
       height: 60%;
     }
-
-    /* .clients-section {
-      padding-top: 0;
-    }
-    .clients-section .client-wrapper {
-      padding-top: 0;
-    } */
   }

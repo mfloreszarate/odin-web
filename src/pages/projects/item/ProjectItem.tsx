@@ -16,17 +16,6 @@ export const ProjectItem = ({ name, backgroundImage, id, description }: ProjectP
   }
 
   return (
-    // <div className='project-item'
-    //   style={{ backgroundImage: `url(${backgroundImage})` }}
-    //   onClick={() => { onNavigate(id) }}
-    // >
-    //   <div className="project-item-overlay"></div>
-    //   <div className="project-detail">
-    //     <span>{name}</span>
-    //     <div className='description  text-shadow'>{description}</div>
-    //   </div>
-
-    // </div>
     <div className={styles.card} style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className={styles.overlay}>
         <h3 className={styles.cardTitle}>{name}</h3>

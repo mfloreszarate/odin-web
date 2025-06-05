@@ -22,16 +22,17 @@ export const ProjectPage = () => {
 
   const renderCustomImage = (item) => (
     <div style={{
-      width: '100%',
+      width: '90%',
       aspectRatio: '16/9',
       overflow: 'hidden',
       borderRadius: '10px',
+      margin: 'auto'
     }}>
       <img
         src={item.original}
         alt={item.originalAlt}
         style={{
-          width: '100%',
+          width: '90%',
           height: '100%',
           objectFit: 'cover',
         }}
@@ -44,19 +45,21 @@ export const ProjectPage = () => {
       <div className="page-container">
         <Navbar mainPage={false} />
         {item &&
-          <section id='clients' className="clients-section" style={{ minHeight: '60vh' }}>
+          <section id='clients' className="clients-section" style={{ minHeight: '60vh', marginBottom: '1rem' }} >
             <div className="title">
               {item.name}
               <div className="separator"></div>
             </div>
-            <div>
-              <ImageGallery showThumbnails={false}
+            <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}>
+              <ImageGallery
+                showThumbnails={false}
                 items={item.images}
                 autoPlay={true}
                 renderItem={renderCustomImage}
+                showFullscreenButton={false}
+                showPlayButton={false}
               />
             </div>
-            {/* <div style={{ padding: '1rem', textAlign: 'center' }}>{item.description}</div> */}
           </section>
         }
         <Footer />

@@ -1,10 +1,7 @@
 import './review.css'
-
-
 interface Props {
   content: string,
   clientName: string,
-  // clientImg: string
 }
 
 export const Review = ({ clientName, content }: Props) => {
