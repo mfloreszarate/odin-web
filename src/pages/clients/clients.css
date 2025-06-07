@@ -1,8 +1,8 @@
 .clients-section {
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  height: 90vh;
+  /* height: 90vh; */
   padding-top: 2rem;
   /* border:1px solid #eab33c; */
 }
@@ -32,7 +32,7 @@
 .clients-section .reviews {
   display: flex;
   wrap:no-wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   /* border:1px solid orange; */
   /* align-items: center; */
@@ -85,6 +85,7 @@
     flex-wrap: wrap;
     border:1px solid red
     height: auto;
+    justify-content: space-around;
   }
     /* Intervalo para pantallas de escritorio grandes (1200px y más) */
   }

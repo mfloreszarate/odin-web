@@ -1,6 +1,6 @@
 .review {
   width: 23%;
-  height:80%;
+  /* height:80%; */
   /* border:1px solid green; */
 }
 
@@ -18,7 +18,7 @@
   font-size: 1rem;
   border-radius: 10px;
   color:#ffff;
-  /* height:70%; */
+  height:70%;
   text-align: center;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
   padding: 20px;
   font-weight: 700;
   color:#333333;
-  height: 20%;
+  height: 30%;
 }
 
 /* Intervalo para teléfonos pequeños (320px a 480px) */

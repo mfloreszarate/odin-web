@@ -8,10 +8,6 @@
 
 }
 .construction-icon {
-    /* position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 100px; */
     animation: float 3s ease-in-out infinite;
   }
 .experience-content {
@@ -121,7 +117,7 @@
 @media (min-width: 481px) and (max-width: 1023px) {
 
   .experience {
-    height:60rem;
+    height:50rem;
   }
 
   .experience-content {
@@ -156,7 +152,9 @@
 
 /* Intervalo para pantallas de escritorio grandes (1200px y más) */
 @media (min-width: 1024px) and (max-width: 1299px)  {
-
+.overlay-detail {
+    height: auto;
+  }
   .experience-description {
     font-size: 3rem ;
     font-weight: 700;

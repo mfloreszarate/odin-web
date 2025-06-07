@@ -56,7 +56,9 @@
 }
 .cardButton:hover {
   background-color: #ffffffee;
+  color: #eab33c;
   transform: translateY(-2px);
+  cursor:pointer;
 }
 @media (max-width: 768px) {
   .card {
