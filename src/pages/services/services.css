@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative; */
-  padding-top: 3rem;
+  padding-top: 2rem;
   /* height:auto; */
   background-color:#f8f8f8;
 }
@@ -32,12 +32,15 @@
 
   .services-section {
     height:auto;
-    background-size: contain; /* Ajusta la imagen para que cubra todo el div */
-    background-repeat: repeat; /* Evita que la imagen se repita */
+    padding-top: 1.5rem;
   }
   /* Estilos para teléfonos pequeños */
   .services-section .content {
     gap:0;
+    padding-top: 0rem;
+  }
+  .services-title {
+    font-size: 1.3rem;
   }
 }
 
@@ -46,17 +49,19 @@
 
   /* Estilos para tablets */
   .services-section {
+    padding-top:1rem;
       height: auto;
       background-size: contain;
-      /* Ajusta la imagen para que cubra todo el div */
-      background-repeat: repeat;
-      /* Evita que la imagen se repita */
     }
   .services-section {
     height:auto;
   }
   .services-section .content {
     gap:0;
+    padding-top: 0rem;
+  }
+  .services-title {
+    font-size: 1.4rem;
   }
 }
 
@@ -64,11 +69,16 @@
 @media (min-width: 1024px) and (max-width: 1199px) {
   /* Estilos para laptops y pantallas de escritorio pequeñas */
     .services-section {
+      padding-top:1rem;
       height:auto;
     }
     .services-section .content {
      gap:0;
+     padding-top: 0rem;
     }
+    .services-title {
+    font-size: 1.5rem;
+  }
 }
 
 /* Intervalo para pantallas de escritorio grandes (1200px y más) */

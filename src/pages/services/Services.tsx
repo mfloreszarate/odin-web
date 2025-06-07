@@ -17,8 +17,8 @@ export const Services = () => {
   return (
     <section className="services-section" id='services'>
       <div className="services-title">
-        NUESTROS SERVICIOS
-      <div className="separator"></div>
+        SERVICIOS
+        <div className="separator"></div>
       </div>
       <div className="content">
         <ServiceItem

@@ -1,4 +1,8 @@
 .flex-container-projects {
+background-image: url('./../../assets/img/blank-concreteold.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,3 +17,37 @@
   padding-bottom: 1rem;
   color:#333;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+
+
+.flex-container-projects {
+  padding-top: 1rem;
+}
+.projects-title {
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+}
+}
+
+/* Intervalo para tablets (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+.flex-container-projects {
+  padding-top: 1rem;
+}
+
+.projects-title {
+  font-size: 1.4rem;
+}
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+  .flex-container-projects {
+    padding-top:1rem;
+  }
+  .projects-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px)  {}

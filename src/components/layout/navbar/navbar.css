@@ -144,7 +144,7 @@
   width: 10%;
 }
 /* Ocultar un componente en pantallas más grandes (por ejemplo, tabletas y computadoras) */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .hamburger-menu {
     display: none;
   }
@@ -156,7 +156,7 @@
 }
 
 /* Mostrar un componente solo en pantallas pequeñas (por ejemplo, móviles) */
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
 
   .hamburger-menu {
     display: block;

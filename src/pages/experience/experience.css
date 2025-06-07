@@ -1,5 +1,5 @@
 .experience {
-  background-image: url('./../../assets/img/metalic.jpg');
+  background-image: url('./../../assets/img/blank-concreteold.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,8 +86,11 @@
 @media (min-width: 320px) and (max-width: 480px) {
   /* Estilos para teléfonos pequeños */
   .experience {
-    height:calc(103vh);
+    height:calc(106vh);
     padding-left:1rem
+  }
+  .our-title {
+    margin-bottom: 0.9rem;
   }
   .experience-content {
     width: 99%;

@@ -2,16 +2,17 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  height: 100vh;
-  padding-top: 3rem;
+  height: 90vh;
+  padding-top: 2rem;
+  /* border:1px solid #eab33c; */
 }
 
 
 .clients-section .client-wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  padding-top: 2rem;
+  height:90%;
+  /* border:1px solid red; */
 }
 .separator {
   width: 8%;
@@ -30,12 +31,16 @@
 }
 .clients-section .reviews {
   display: flex;
-  justify-content: space-between;
+  wrap:no-wrap;
+  justify-content: space-around;
   width: 100%;
-
+  /* border:1px solid orange; */
+  /* align-items: center; */
+  height:80%
 }
 .clients-section .brands-wrapper {
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
+  height:20%
   box-sizing: border-box;
   width: 80%;
   margin: auto;
@@ -47,11 +52,12 @@
   .clients-section {
     width: 100%;
     height: auto;
+    padding-top: 0rem;
   }
   .clients-section .title {
-    margin-top:1rem;
-    font-size:1.5rem;
+    font-size: 1.3rem;
     padding:10px;
+    padding-top: 0;
     box-sizing: border-box;
   }
   .clients-section .reviews {
@@ -60,28 +66,44 @@
   .separator {
     width: 20%;
   }
+  .clients-section .client-wrapper {
+    padding-top:1rem;
+  }
 }
 /* Intervalo para tablets (768px a 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
 
   .clients-section {
+    padding-top:1rem;
       width: 100%;
       height: auto;
   }
     .clients-section .title {
-    /* margin-top:0.5rem; */
-    font-size:2rem;
+    font-size: 1.4rem;
   }
   .clients-section .reviews {
-    display: flex;
     flex-wrap: wrap;
+    border:1px solid red
+    height: auto;
   }
     /* Intervalo para pantallas de escritorio grandes (1200px y más) */
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    .clients-section {
+      padding-top:1rem;
+      width: 90%;
+      height: auto;
+    }
+    .clients-section .title {
+      font-size: 1.5rem;
+    }
+
+  }
+  @media (min-width: 1200px) and (max-width: 1400px)  {
     /* Estilos para pantallas de escritorio grandes */
 
     .clients-section .client-wrapper {
-      height: 60%;
+      /* height: 60%; */
+      padding-top: 4rem;
     }
   }

@@ -12,7 +12,7 @@ export default function Experience() {
       <div className="overlay"></div>
       <div className="experience-content">
         <div className="info">
-          <div className='text-shadow spacing'>
+          <div className='text-shadow spacing our-title'>
             NOSOTROS
           </div>
           <div className='text-shadow experience-description'>
