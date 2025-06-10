@@ -2,9 +2,7 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  /* height: 90vh; */
   padding-top: 2rem;
-  /* border:1px solid #eab33c; */
 }
 
 
@@ -52,7 +50,8 @@
   .clients-section {
     width: 100%;
     height: auto;
-    padding-top: 0rem;
+    /* padding-top: 0rem; */
+    padding-top: 1rem;
   }
   .clients-section .title {
     font-size: 1.3rem;

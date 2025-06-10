@@ -42,15 +42,15 @@ export const ProjectPage = () => {
 
   return (
     <>
-      <div className="page-container">
+      <div className="project-page-container">
         <Navbar mainPage={false} />
         {item &&
-          <section id='clients' className="clients-section" style={{ minHeight: '60vh', marginBottom: '1rem' }} >
-            <div className="title">
+          <section id='clients' className="clients-section-pp" style={{ minHeight: '60vh', marginBottom: '1rem' }} >
+            <div className="title-pp">
               {item.name}
               <div className="separator"></div>
             </div>
-            <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}>
+            <div className="gallery-container">
               <ImageGallery
                 showThumbnails={false}
                 items={item.images}

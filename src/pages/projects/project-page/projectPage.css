@@ -11,3 +11,57 @@
   margin: auto;
   padding: 1rem;
 }
+
+
+.clients-section-pp {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+}
+.clients-section-pp .title-pp {
+  font-size: 1.7rem;
+  color:#333;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.gallery-container {
+  margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+
+  .clients-section-pp {
+    width: 100%;
+    height: auto;
+    padding-top: 4rem;
+  }
+  .clients-section-pp .title-pp{
+    font-size: 1.3rem;
+    padding:10px;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+  .gallery-container {
+    display: flex;
+    height:40vh;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .clients-section-pp {
+    width: 100%;
+    height: auto;
+    padding-top: 4rem;
+  }
+  .clients-section-pp .title-pp{
+    font-size: 1.4rem;
+    padding:10px;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+}

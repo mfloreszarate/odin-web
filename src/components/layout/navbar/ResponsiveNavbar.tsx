@@ -21,7 +21,7 @@ const HamburgerMenu = () => {
 
   return (
     // <div className='navbar-wrapper' style={{ position: mainPage ? 'fixed' : 'relative', width: '100%', zIndex: 1000, background: backgroundColor }}></div>
-    <div className="hamburger-menu" style={{ position: 'fixed', width: '100%', zIndex: 1000 }}>
+    <div className="hamburger-menu" style={{ position: 'fixed', width: '100%', zIndex: 100000 }}>
       <div className='hamburger-menu-wrapper'>
         <button className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <span className="line"></span>
@@ -32,13 +32,15 @@ const HamburgerMenu = () => {
       </div>
       <nav className={`hamburger-menu-item ${isOpen ? 'show' : ''}`}>
         {/* Botón de cerrar */}
-        <button className="close-button" onClick={toggleMenu}>X</button>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '1rem' }}>
+          <button className="close-button" onClick={toggleMenu}>X</button>
+        </div>
         <div className='ul-wrapper'>
           <span>
             <img src={Logo} alt="odin-logo" />
           </span>
           <ul>
-            {menuConfig.map(el => <li key={el.item} className='menu-item' onClick={() => { handleClick(el.link) }}>{el.item}</li>)}
+            {menuConfig.map(el => <li key={el.item} style={{ fontSize: '1.2rem' }} className='menu-item' onClick={() => { handleClick(el.link) }}>{el.item}</li>)}
           </ul>
         </div>
       </nav>
