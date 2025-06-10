@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   width: 30%;
   transition: transform 0.3s ease;
-  padding-top:1rem
+  padding-top:1rem;
+  /* border:1px solid red; */
 }
 .item svg {
   min-width: 60px;
@@ -58,6 +59,7 @@
   padding:1.5rem;
   padding-top:1rem;
   color: #333333;
+  /* border:1px solid green; */
 }
 .item img {
   width: 60px;
@@ -66,7 +68,12 @@
   width: 60px;
   display: none;
 }
-
+.buttonContainer {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-top:1rem;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   /* Estilos para teléfonos pequeños */
   .item {
@@ -89,6 +96,9 @@
   .item .description {
     font-size: 0.9rem;
   }
+    /* .buttonContainer {
+      margin-top: 1rem;
+    } */
 }
 
 /* Intervalo para tablets (768px a 1023px) */

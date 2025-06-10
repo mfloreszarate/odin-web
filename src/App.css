@@ -2,7 +2,6 @@
 .full-height {
   height: 100vh;
 }
-
 body,
 html {
   height: 100%;
@@ -16,9 +15,6 @@ html {
 
   font-optical-sizing: auto;
   font-style: normal;
-}
-.text-title {
-  font-family: "League Spartan", sans-serif !important;
 }
 
 .center,

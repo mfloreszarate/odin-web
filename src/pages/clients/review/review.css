@@ -18,7 +18,8 @@
   font-size: 1rem;
   border-radius: 10px;
   color:#ffff;
-  height:70%;
+  /* height:70%; */
+  height: 200px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -45,6 +46,10 @@
    height:auto
   }
 
+  .review .content {
+    height: 140px;
+  }
+
 }
 
 /* Intervalo para tablets (768px a 1023px) */
@@ -56,16 +61,21 @@
    height:auto;
   }
   .review .content{
-    height: 65%;
+    height: 180px;
   }
 }
 
 /* Intervalo para laptops y pantallas de escritorio pequeñas (1024px a 1199px) */
 @media (min-width: 1024px) and (max-width: 1199px) {
-  /* Estilos para laptops y pantallas de escritorio pequeñas */
+  .review .content{
+    height: 250px;
+  }
 }
 
 /* Intervalo para pantallas de escritorio grandes (1200px y más) */
 @media (min-width: 1200px) {
   /* Estilos para pantallas de escritorio grandes */
+  .review .content{
+    height: 150px;
+  }
 }

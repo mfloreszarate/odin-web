@@ -12,11 +12,15 @@ interface Props {
 export const ServiceItem = ({ title, description, image, hoverImg, viewMore }: Props) => {
 
   const [isHovered, setIsHovered] = useState(false);
-  const handleClick = async () => {
-    try {
-      const pdfPath = '/files/granny.pdf'; // por ejemplo en /public/files/
 
-      // Obtener el PDF como Blob
+  const handleClick = async (name: string) => {
+    try {
+      let pdfPath = '';
+      if (name == 'Casas financiadas') {
+        pdfPath = '/files/casas.pdf';
+      } else {
+        pdfPath = '/files/granny.pdf';
+      }
       const response = await fetch(pdfPath);
 
       if (!response.ok) {
@@ -31,7 +35,6 @@ export const ServiceItem = ({ title, description, image, hoverImg, viewMore }: P
         alert('El archivo no es un PDF');
         return;
       }
-
       window.open(fileURL, '_blank');
     }
     catch (error) {
@@ -52,10 +55,11 @@ export const ServiceItem = ({ title, description, image, hoverImg, viewMore }: P
       </div>
       <div className={styles.description}>
         {description}
+        {viewMore && <div className={styles.buttonContainer}>
+          <a className={styles.cardButton} onClick={() => { handleClick(title) }}>Ver más</a>
+        </div>}
       </div>
-      {viewMore && <div style={{ display: 'flex', justifyContent: 'right', width: '100%' }}>
-        <a className={styles.cardButton} onClick={handleClick}>Ver más..</a>
-      </div>}
+
 
     </div>
   )

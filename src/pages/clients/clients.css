@@ -1,8 +1,9 @@
 .clients-section {
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
+  height: 90vh;
 }
 
 
@@ -10,7 +11,6 @@
   display: flex;
   flex-wrap: wrap;
   height:90%;
-  /* border:1px solid red; */
 }
 .separator {
   width: 8%;
@@ -32,8 +32,7 @@
   wrap:no-wrap;
   justify-content: space-between;
   width: 100%;
-  /* border:1px solid orange; */
-  /* align-items: center; */
+  align-items: center;
   height:80%
 }
 .clients-section .brands-wrapper {
@@ -92,7 +91,7 @@
     .clients-section {
       padding-top:1rem;
       width: 90%;
-      height: auto;
+      height: 100vh;
     }
     .clients-section .title {
       font-size: 1.5rem;
@@ -102,8 +101,13 @@
   @media (min-width: 1200px) and (max-width: 1400px)  {
     /* Estilos para pantallas de escritorio grandes */
 
+    .clients-section {
+      height: auto;
+    }
     .clients-section .client-wrapper {
-      /* height: 60%; */
       padding-top: 4rem;
+    }
+    .reviews {
+      margin-bottom: 3rem;
     }
   }
