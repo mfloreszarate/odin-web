@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import styles from './service-item.module.css';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
   title: string,
@@ -9,9 +10,16 @@ interface Props {
   image: string,
   hoverImg: string
 }
+
 export const ServiceItem = ({ title, description, image, hoverImg, viewMore }: Props) => {
 
   const [isHovered, setIsHovered] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate()
+
+  const goHouse = () => {
+    navigate('/servicios/casas-financiadas')
+  }
 
   const handleClick = async (name: string) => {
     try {
@@ -46,6 +54,7 @@ export const ServiceItem = ({ title, description, image, hoverImg, viewMore }: P
     <div className={styles.item}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
+
       <div className={styles.title}>
         <img
           src={!isHovered ? image : hoverImg}
@@ -56,7 +65,7 @@ export const ServiceItem = ({ title, description, image, hoverImg, viewMore }: P
       <div className={styles.description}>
         {description}
         {viewMore && <div className={styles.buttonContainer}>
-          <a className={styles.cardButton} onClick={() => { handleClick(title) }}>Ver más</a>
+          <a className={styles.cardButton} onClick={goHouse}>Ver más</a>
         </div>}
       </div>
 
